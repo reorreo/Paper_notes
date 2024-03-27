@@ -7,6 +7,8 @@
 3. [A Simple Framework for Contrastive Learning of Visual Representations (PMLR2023):SimCLR]
 4. [Momentum Contrast for Unsupervised Visual Representation Learning(CVPR2020):MoCo]
 5. [Exploring Simple Siamese Representation Learning(CVPR2021):SimSiam]
+6. [Representation Learning with Contrastive Predictive Coding(2018)]
+7. [Bootstrap your own latent-a new approach to self-supervised learning(2020)]
 
 ---
 
@@ -45,12 +47,28 @@
 </div></details> 
 - Keywords : `Contrastive Learning`
 
-###Exploring Simple Siamese Representation Learning(CVPR2021):SimSiam
+### Exploring Simple Siamese Representation Learning(CVPR2021):SimSiam
 [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Exploring_Simple_Siamese_Representation_Learning_CVPR_2021_paper.pdf)
-[]([[Code]])
+[[Code]](https://github.com/facebookresearch/simsiam)
 [[bibtex]](https://openaccess.thecvf.com/content/CVPR2021/html/Chen_Exploring_Simple_Siamese_Representation_Learning_CVPR_2021_paper.html)
 <details><summary>summary</summary><div>
   
+</div></details> 
+- Keywords : `Contrastive Learning`
+
+### Representation Learning with Contrastive Predictive Coding(2018)
+[[Paper]](https://arxiv.org/pdf/1807.03748)
+[[bibtex]](https://arxiv.org/abs/1807.03748)
+<details><summary>summary</summary><div>
+  TCL内でInfoNCEの説明に使われている．
+</div></details> 
+- Keywords : `Contrastive Learning`
+
+
+### Bootstrap your own latent-a new approach to self-supervised learning(2020)
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2020/file/f3ada80d5c4ee70142b17b8192b2958e-Paper.pdf)
+<details><summary>summary</summary><div>
+
 </div></details> 
 - Keywords : `Contrastive Learning`
 
