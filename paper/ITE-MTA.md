@@ -12,6 +12,10 @@
 8. [Learning From Noisy Data With Robust Representation Learning(ICCV2021):RRL]
 9. [Multi-Objective Interpolation Training for Robustness To Label Noise(CVPR2021):MOIT]
 10. [Dividemix: Learning with noisy labels as semi-supervised learning(2020):DivideMix]
+11. [mixup: Beyond empirical risk minimization(2017):MixUp]
+12. [Probabilistic End-To-End Noise Correction for Learning With Noisy Labels(CVPR2019)]
+13. [Unsupervised Label Noise Modeling and Loss Correction(PMLR2019)]
+14. [Early-learning regularization prevents memorization of noisy labels(NIPS2019):ELR]
 ---
 
 ### Twin Contrastive Learning With Noisy Labels (CVPR2023):TCL
@@ -30,6 +34,7 @@
 
 </div></details> 
 
+##  対照学習
 ### A Simple Framework for Contrastive Learning of Visual Representations (PMLR2023):SimCLR
 [[Paper]](http://proceedings.mlr.press/v119/chen20j/chen20j.pdf)
 [[Code]](https://github.com/google-research/simclr)
@@ -92,8 +97,6 @@ InfoNCEの損失をMixUpしている?．今後の研究でしたいことと似�
 </div></details> 
 - Keywords : `Contrastive Learning` 'MixUp'
 
-ここまで対照学習
-
 
 ### Dividemix: Learning with noisy labels as semi-supervised learning(2020):DivideMix
 [[Paper]](https://arxiv.org/pdf/2002.07394)
@@ -103,5 +106,43 @@ InfoNCEの損失をMixUpしている?．今後の研究でしたいことと似�
 </div></details> 
 - Keywords : `` 'MixUp'
 
+## TCL内の比較してる手法
 
-以下データセット系
+### mixup: Beyond empirical risk minimization(2017):MixUp
+[[Paper]](https://arxiv.org/pdf/1710.09412)
+[[bibtex]](https://arxiv.org/abs/1710.09412)
+<details><summary>summary</summary><div>
+
+</div></details> 
+- Keywords : `` 'MixUp'
+
+### Probabilistic End-To-End Noise Correction for Learning With Noisy Labels(CVPR2019)
+[[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Yi_Probabilistic_End-To-End_Noise_Correction_for_Learning_With_Noisy_Labels_CVPR_2019_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content_CVPR_2019/html/Yi_Probabilistic_End-To-End_Noise_Correction_for_Learning_With_Noisy_Labels_CVPR_2019_paper.html)
+<details><summary>summary</summary><div>
+  
+</div></details> 
+
+### Unsupervised Label Noise Modeling and Loss Correction(PMLR2019)
+[[Paper]](http://proceedings.mlr.press/v97/arazo19a/arazo19a.pdf)
+[[bibtex]](https://proceedings.mlr.press/v97/arazo19a.html)
+<details><summary>summary</summary><div>
+
+</div></details> 
+
+### Early-learning regularization prevents memorization of noisy labels(NIPS2019)
+[[Paper]](http://proceedings.mlr.press/v97/arazo19a/arazo19a.pdf)
+[[bibtex]](https://proceedings.mlr.press/v97/arazo19a.html)
+<details><summary>summary</summary><div>
+
+</div></details> 
+
+### Early-learning regularization prevents memorization of noisy labels(NIPS2019):ELR
+[[Paper]](http://proceedings.mlr.press/v97/arazo19a/arazo19a.pdf)
+[[bibtex]](https://proceedings.mlr.press/v97/arazo19a.html)
+<details><summary>summary</summary><div>
+
+</div></details> 
+
+
+## データセット系
