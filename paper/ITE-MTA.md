@@ -15,8 +15,13 @@
 11. [mixup: Beyond empirical risk minimization(2017):MixUp]
 12. [Probabilistic End-To-End Noise Correction for Learning With Noisy Labels(CVPR2019)]
 13. [Unsupervised Label Noise Modeling and Loss Correction(PMLR2019)]
-14. [Early-learning regularization prevents memorization of noisy labels(NIPS2019):ELR]
+14. [Early-learning regularization prevents memorization of noisy labels(NIPS2020):ELR]
+15. [Selective-Supervised Contrastive Learning With Noisy Labels(CVPR2022):Sel-CL]
+16. [On Learning Contrastive Representations for Learning With Noisy Labels(CVPR2022):CTRR]
+17. [Probabilistic End-To-End Noise Correction for Learning With Noisy Labels(CVPR2019)]
+18. [Peer Loss Functions: Learning from Noisy Labels without Knowing Noise Rates(PMLR2020)]
 ---
+
 
 ### Twin Contrastive Learning With Noisy Labels (CVPR2023):TCL
 [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Twin_Contrastive_Learning_With_Noisy_Labels_CVPR_2023_paper.pdf)
@@ -130,18 +135,45 @@ InfoNCEの損失をMixUpしている?．今後の研究でしたいことと似�
 
 </div></details> 
 
-### Early-learning regularization prevents memorization of noisy labels(NIPS2019)
+### Early-learning regularization prevents memorization of noisy labels(NIPS2020):ELR
 [[Paper]](http://proceedings.mlr.press/v97/arazo19a/arazo19a.pdf)
 [[bibtex]](https://proceedings.mlr.press/v97/arazo19a.html)
 <details><summary>summary</summary><div>
 
 </div></details> 
 
-### Early-learning regularization prevents memorization of noisy labels(NIPS2019):ELR
-[[Paper]](http://proceedings.mlr.press/v97/arazo19a/arazo19a.pdf)
-[[bibtex]](https://proceedings.mlr.press/v97/arazo19a.html)
+### Selective-Supervised Contrastive Learning With Noisy Labels(CVPR2022):Sel-CL
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Selective-Supervised_Contrastive_Learning_With_Noisy_Labels_CVPR_2022_paper.pdf)
+[[code]](https://github.com/ShikunLi/Sel-CL)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2022/html/Li_Selective-Supervised_Contrastive_Learning_With_Noisy_Labels_CVPR_2022_paper.html)
 <details><summary>summary</summary><div>
 
+</div></details> 
+- Keywords : `Contrastive Learning` '提案手法を組み込む候補' 
+
+
+## RankMatch内の比較してる手法
+### On Learning Contrastive Representations for Learning With Noisy Labels(CVPR2022):CTRR
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Yi_On_Learning_Contrastive_Representations_for_Learning_With_Noisy_Labels_CVPR_2022_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2022/html/Yi_On_Learning_Contrastive_Representations_for_Learning_With_Noisy_Labels_CVPR_2022_paper.html)
+<details><summary>summary</summary><div>
+
+</div></details> 
+- Keywords : `Contrastive Learning`
+
+### Probabilistic End-To-End Noise Correction for Learning With Noisy Labels(CVPR2019)
+[[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Yi_Probabilistic_End-To-End_Noise_Correction_for_Learning_With_Noisy_Labels_CVPR_2019_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content_CVPR_2019/html/Yi_Probabilistic_End-To-End_Noise_Correction_for_Learning_With_Noisy_Labels_CVPR_2019_paper.htmll)
+<details><summary>summary</summary><div>
+ノイズの多いラベルを修正するために、別の一連の研究では、ノイズの多いラベルをネットワーク予測で置き換える自己学習アーキテクチャを提案している
+</div></details>
+- Keywords : `Contrastive Learning`
+
+### Peer Loss Functions: Learning from Noisy Labels without Knowing Noise Rates(PMLR2020)
+[[Paper]](http://proceedings.mlr.press/v119/liu20e/liu20e.pdf)
+[[bibtex]](https://proceedings.mlr.press/v119/liu20e.html)
+<details><summary>summary</summary><div>
+punishment regularization(罰正規化)
 </div></details> 
 
 
