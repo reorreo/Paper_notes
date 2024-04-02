@@ -21,6 +21,9 @@
 16. [On Learning Contrastive Representations for Learning With Noisy Labels(CVPR2022):CTRR]
 17. [Probabilistic End-To-End Noise Correction for Learning With Noisy Labels(CVPR2019)]
 18. [Peer Loss Functions: Learning from Noisy Labels without Knowing Noise Rates(PMLR2020)]
+19. [Robust Training under Label Noise by Over-parameterization(PMLR2022)]
+20. [A Closer Look at Memorization in Deep Networks(PMLR2017)]
+21. [Augmentation Strategies for Learning With Noisy Labels(CVPR2021)]
 ---
 
 
@@ -108,7 +111,7 @@ InfoNCEの損失をMixUpしている?．今後の研究でしたいことと似�
 [[Paper]](https://arxiv.org/pdf/2002.07394)
 [[bibtex]](https://arxiv.org/abs/2002.07394)
 <details><summary>summary</summary><div>
-
+co-
 </div></details> 
 - Keywords : `` 'MixUp'
 
@@ -177,5 +180,27 @@ InfoNCEの損失をMixUpしている?．今後の研究でしたいことと似�
 punishment regularization(罰正規化)
 </div></details> 
 
+### Robust Training under Label Noise by Over-parameterization(PMLR2022)
+[[Paper]](https://proceedings.mlr.press/v162/liu22w/liu22w.pdf)
+[[bibtex]](https://proceedings.mlr.press/v162/liu22w.html)
+<details><summary>summary</summary><div>
+over parameterized term(過剰パラメータ化項)
+</div></details> 
+
+### A Closer Look at Memorization in Deep Networks(PMLR2017)
+[[Paper]](http://proceedings.mlr.press/v70/arpit17a/arpit17a.pdf)
+[[bibtex]](https://proceedings.mlr.press/v70/arpit17a.html)
+<details><summary>summary</summary><div>
+Memorization Efectについか書かれている論文
+</div></details> 
+- Keywords : `Memorization Efect`
+
+### Augmentation Strategies for Learning With Noisy Labels(CVPR2021)
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Nishi_Augmentation_Strategies_for_Learning_With_Noisy_Labels_CVPR_2021_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2021/html/Nishi_Augmentation_Strategies_for_Learning_With_Noisy_Labels_CVPR_2021_paper.html)
+<details><summary>summary</summary><div>
+損失からGMMを用いてラベルがクリーンである確率を計算している手法．
+論文で引くときはDivideMixも一緒にの場所に引用する予定．
+</div></details> 
 
 ## データセット系
