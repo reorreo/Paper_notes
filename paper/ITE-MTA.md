@@ -72,7 +72,7 @@
 </div></details> 
 - Keywords : `Contrastive Learning`
 
-### Representation Learning with Contrastive Predictive Coding(2018):BYOL
+### Representation Learning with Contrastive Predictive Coding(2018)
 [[Paper]](https://arxiv.org/pdf/1807.03748)
 [[bibtex]](https://arxiv.org/abs/1807.03748)
 <details><summary>summary</summary><div>
@@ -81,7 +81,7 @@
 - Keywords : `Contrastive Learning`
 
 
-### Bootstrap your own latent-a new approach to self-supervised learning(2020)
+### Bootstrap your own latent-a new approach to self-supervised learning(2020):BYOL
 [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2020/file/f3ada80d5c4ee70142b17b8192b2958e-Paper.pdf)
 <details><summary>summary</summary><div>
 
