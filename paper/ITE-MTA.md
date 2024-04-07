@@ -203,4 +203,8 @@ Memorization Efectについか書かれている論文
 論文で引くときはDivideMixも一緒にの場所に引用する予定．
 </div></details> 
 
+Dimension-
+ality reduction by learning an invariant mapping. # 引用まだ
+contrastive learningの始めのところ
+
 ## データセット系
