@@ -24,6 +24,7 @@
 19. [Robust Training under Label Noise by Over-parameterization(PMLR2022)]
 20. [A Closer Look at Memorization in Deep Networks(PMLR2017)]
 21. [Augmentation Strategies for Learning With Noisy Labels(CVPR2021)]
+22. [Understanding deep learning (still) requires rethinking generalization(2021)]
 ---
 
 
@@ -201,6 +202,13 @@ Memorization Efectについか書かれている論文
 <details><summary>summary</summary><div>
 損失からGMMを用いてラベルがクリーンである確率を計算している手法．
 論文で引くときはDivideMixも一緒にの場所に引用する予定．
+</div></details> 
+
+### Understanding deep learning (still) requires rethinking generalization(2021)
+[[Paper]](https://dl.acm.org/doi/pdf/10.1145/3446776)
+[[bibtex]](https://dl.acm.org/doi/abs/10.1145/3446776)
+<details><summary>summary</summary><div>
+ノイズへの適合について述べている．
 </div></details> 
 
 Dimension-
