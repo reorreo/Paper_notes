@@ -211,8 +211,13 @@ Memorization Efectについか書かれている論文
 ノイズへの適合について述べている．
 </div></details> 
 
-Dimension-
-ality reduction by learning an invariant mapping. # 引用まだ
-contrastive learningの始めのところ
+### Dimensionality reduction by learning an invariant mapping(2006)
+[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1640964)
+[[bibtex]](https://ieeexplore.ieee.org/abstract/document/1640964)
+<details><summary>summary</summary><div>
+引用まだcontrastive learningの始めのところ
+SimSiamである
+</div></details> 
+
 
 ## データセット系
