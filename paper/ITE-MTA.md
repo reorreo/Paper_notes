@@ -178,6 +178,7 @@ co-
 [[Paper]](http://proceedings.mlr.press/v119/liu20e/liu20e.pdf)
 [[bibtex]](https://proceedings.mlr.press/v119/liu20e.html)
 <details><summary>summary</summary><div>
+いったんパス
 punishment regularization(罰正規化)
 </div></details> 
 
