@@ -26,6 +26,8 @@
 21. [Augmentation Strategies for Learning With Noisy Labels(CVPR2021)]
 22. [Understanding deep learning (still) requires rethinking generalization(2021)]
 23. [Making Deep Neural Networks Robust to Label Noise: A Loss Correction Approach(2017)]
+24. [Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion(2019)]
+25. [Are Anchor Points Really Indispensable in Label-Noise Learning?(2019)]
 ---
 
 
@@ -230,7 +232,7 @@ SimSiamである
 TCL内で引用されていた
 </div></details> 
 
-### Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion
+### Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion(2019)
 [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Tanno_Learning_From_Noisy_Labels_by_Regularized_Estimation_of_Annotator_Confusion_CVPR_2019_paper.pdf)
 [[bibtex]](https://openaccess.thecvf.com/content_CVPR_2019/html/Tanno_Learning_From_Noisy_Labels_by_Regularized_Estimation_of_Annotator_Confusion_CVPR_2019_paper.html)
 <details><summary>summary</summary><div>
@@ -238,7 +240,7 @@ TCL内で引用されていた
 TCL内で引用されていた
 </div></details> 
 
-### Are Anchor Points Really Indispensable in Label-Noise Learning?
+### Are Anchor Points Really Indispensable in Label-Noise Learning?(2019)
 [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2019/file/9308b0d6e5898366a4a986bc33f3d3e7-Paper.pdf)
 [[bibtex]](https://proceedings.neurips.cc/paper/2019/hash/9308b0d6e5898366a4a986bc33f3d3e7-Abstract.html)
 <details><summary>summary</summary><div>
