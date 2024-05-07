@@ -28,6 +28,16 @@
 23. [Making Deep Neural Networks Robust to Label Noise: A Loss Correction Approach(2017)]
 24. [Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion(2019)]
 25. [Are Anchor Points Really Indispensable in Label-Noise Learning?(2019)]
+26. [The Multidimensional Wisdom of Crowds(NIPS2010)]
+27. [NEIL: Extracting Visual Knowledge from Web Data(ICCV2013)]
+28. [Visual Recognition by Learning From Web Data: A Weakly Supervised Domain Generalization Approach(CVPR2015)]
+29. [Learning From Massive Noisy Labeled Data for Image Classification(CVPR2015)]
+30. [{SELFIE}: Refurbishing Unclean Samples for Robust Deep Learning(PMLR2019)]
+31. [WebVision Database: Visual Learning and Understanding from Web Data(CoRR2017)]
+32. [Learning with Symmetric Label Noise: The Importance of Being Unhinged(NeurIPS2015)]
+33. [Learning multiple layers of features from tiny images(2009cifar)]
+34. [Imagenet: A large-scale hierarchical image database(2009ImageNer)]
+35. [Visualizing data using t-SNE(2008t-SNE)]
 ---
 
 
@@ -230,6 +240,7 @@ SimSiamである
 <details><summary>summary</summary><div>
 ノイズ遷移行列使う方法
 TCL内で引用されていた
+Asymmetricの説明
 </div></details> 
 
 ### Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion(2019)
@@ -247,5 +258,79 @@ TCL内で引用されていた
 ノイズ遷移行列使う方法
 TCL内で引用されていた
 </div></details> 
+
+### The Multidimensional Wisdom of Crowds(NIPS2010)
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2010/file/0f9cafd014db7a619ddb4276af0d692c-Paper.pdf)
+[[bibtex]](https://proceedings.neurips.cc/paper_files/paper/2010/hash/0f9cafd014db7a619ddb4276af0d692c-Abstract.html)
+<details><summary>summary</summary><div>
+クラウドソーシングシステムについて述べている．
+</div></details> 
+
+## NEIL: Extracting Visual Knowledge from Web Data(ICCV2013)
+[[Paper]](https://openaccess.thecvf.com/content_iccv_2013/papers/Chen_NEIL_Extracting_Visual_2013_ICCV_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content_iccv_2013/html/Chen_NEIL_Extracting_Visual_2013_ICCV_paper.html)
+<details><summary>summary</summary><div>
+web使ってデータを集めることが書いてる
+</div></details> 
+
+## Harvesting image databases from the web(IEEE2010)
+[[bibtex]](https://ieeexplore.ieee.org/abstract/document/5518767)
+<details><summary>summary</summary><div>
+web使ってデータを集めることが書いてる
+</div></details> 
+
+## Visual Recognition by Learning From Web Data: A Weakly Supervised Domain Generalization Approach(CVPR2015)
+[[Paper]](https://openaccess.thecvf.com/content_cvpr_2015/papers/Niu_Visual_Recognition_by_2015_CVPR_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content_cvpr_2015/html/Niu_Visual_Recognition_by_2015_CVPR_paper.html)
+<details><summary>summary</summary><div>
+web使ってデータを集めることが書いてる
+</div></details> 
+
+## Learning From Massive Noisy Labeled Data for Image Classification(CVPR2015)
+[[Paper]](https://openaccess.thecvf.com/content_cvpr_2015/papers/Xiao_Learning_From_Massive_2015_CVPR_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content_cvpr_2015/html/Xiao_Learning_From_Massive_2015_CVPR_paper.html)
+<details><summary>summary</summary><div>
+ノイズ率が8~35%程度のことのところで引用
+</div></details> 
+
+## {SELFIE}: Refurbishing Unclean Samples for Robust Deep Learning(PMLR2019)
+[[Paper]](http://proceedings.mlr.press/v97/song19b/song19b.pdf)
+[[bibtex]](https://proceedings.mlr.press/v97/song19b.html)
+<details><summary>summary</summary><div>
+ノイズ率が8~35%程度のことのところで引用
+</div></details> 
+
+## WebVision Database: Visual Learning and Understanding from Web Data(CoRR2017)
+[[Paper]](https://arxiv.org/pdf/1708.02862)
+[[bibtex]](https://arxiv.org/abs/1708.02862)
+<details><summary>summary</summary><div>
+ノイズ率が8~35%程度のことのところで引用
+</div></details> 
+
+## Learning with Symmetric Label Noise: The Importance of Being Unhinged(NeurIPS2015)
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2015/file/45c48cce2e2d7fbdea1afc51c7c6ad26-Paper.pdf)
+[[bibtex]](https://proceedings.neurips.cc/paper/2015/hash/45c48cce2e2d7fbdea1afc51c7c6ad26-Abstract.html)
+<details><summary>summary</summary><div>
+Symmetric
+</div></details> 
+
+## Learning multiple layers of features from tiny images(2009cifar)
+[[Paper]](http://www.cs.utoronto.ca/~kriz/learning-features-2009-TR.pdf)
+<details><summary>summary</summary><div>
+Cifar10, Cifar100
+</div></details> 
+
+## Imagenet: A large-scale hierarchical image database(2009ImageNer)
+[[bibtex]](https://ieeexplore.ieee.org/abstract/document/5206848)
+<details><summary>summary</summary><div>
+ImageNet
+</div></details> 
+
+## Visualizing data using t-SNE(2008t-SNE)
+[[pdf]](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf?fbcl)
+<details><summary>summary</summary><div>
+t-SNE
+</div></details> 
+
 
 ## データセット系
