@@ -38,6 +38,7 @@
 33. [Learning multiple layers of features from tiny images(2009cifar)]
 34. [Imagenet: A large-scale hierarchical image database(2009ImageNer)]
 35. [Visualizing data using t-SNE(2008t-SNE)]
+36. [On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima(2016)]
 ---
 
 
@@ -330,6 +331,13 @@ ImageNet
 [[pdf]](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf?fbcl)
 <details><summary>summary</summary><div>
 t-SNE
+</div></details> 
+
+## On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima(2016)
+[[Paper]](https://arxiv.org/pdf/1609.04836)
+[[bibtex]](https://arxiv.org/abs/1609.04836)
+<details><summary>summary</summary><div>
+バッチサイズ小さい方が精度が高くなることをいっている．
 </div></details> 
 
 
