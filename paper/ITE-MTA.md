@@ -155,8 +155,7 @@ co-
 </div></details> 
 
 ### Early-learning regularization prevents memorization of noisy labels(NIPS2020):ELR
-[[Paper]](http://proceedings.mlr.press/v97/arazo19a/arazo19a.pdf)
-[[bibtex]](https://proceedings.mlr.press/v97/arazo19a.html)
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2020/file/ea89621bee7c88b2c5be6681c8ef4906-Paper.pdf)
 <details><summary>summary</summary><div>
 
 </div></details> 
