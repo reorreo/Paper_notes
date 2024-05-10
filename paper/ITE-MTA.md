@@ -362,7 +362,7 @@ t-SNE
 
 ## Prestopping: How Does Early Stopping Help Generalization Against Label Noise?
 [[Paper]](https://openreview.net/pdf?id=BklSwn4tDH)
-[[bibtex]]https://openreview.net/forum?id=BklSwn4tDH)
+[[bibtex]](https://openreview.net/forum?id=BklSwn4tDH)
 <details><summary>summary</summary><div>
 https://openreview.net/forum?id=BklSwn4tDH
 
