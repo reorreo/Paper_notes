@@ -5,6 +5,8 @@
 ## Title List
 
 1. [Adaptive Integration of Partial Label Learning and Negative Learning for Enhanced Noisy Label Learning]
+2. [Regroup Median Loss for Combating Label Noise (2024:AAAI)]
+3. [Learning Accurate Pseudo-Labels via Feature Similarity in the(MDPI)]
 
 ---
 
@@ -31,7 +33,7 @@ CIFAR-10のSymmetric50%で90%弱だったのであまり正解率高くない?
 トレーニングサンプルと同じラベルを持つサンプルをランダムに選択し，再グループ化する．
 </div></details> 
 
-### Learning Accurate Pseudo-Labels via Feature Similarity in the
+### Learning Accurate Pseudo-Labels via Feature Similarity in the(MDPI)
 [[Paper]](https://www.mdpi.com/2076-3417/14/7/2759/pdf?version=1711447152)
 [[bibtex]](https://www.mdpi.com/2076-3417/14/7/2759)
 <details><summary>summary</summary><div>
