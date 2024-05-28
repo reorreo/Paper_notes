@@ -31,4 +31,14 @@ CIFAR-10のSymmetric50%で90%弱だったのであまり正解率高くない?
 トレーニングサンプルと同じラベルを持つサンプルをランダムに選択し，再グループ化する．
 </div></details> 
 
-https://github.com/Feng-peng-Li/Regroup-Loss-Median-to-Combat-Label-Noise
+### Regroup Median Loss for Combating Label Noise (2024:AAAI)
+[[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29250/30360)
+[[Code]](https://github.com/Feng-peng-Li/Regroup-Loss-Median-to-Combat-Label-Noise)
+[[bibtex]](https://ojs.aaai.org/index.php/AAAI/article/view/29250)
+<details><summary>summary</summary><div>
+Instanceノイズが登場している(CIFAR)
+CIFAR-10のSymmetric50%で90%弱だったのであまり正解率高くない?
+ノイズのあるサンプルの損失を修正する．
+トレーニングサンプルと同じラベルを持つサンプルをランダムに選択し，再グループ化する．
+</div></details> 
+
