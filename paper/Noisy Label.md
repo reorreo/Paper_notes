@@ -40,6 +40,8 @@ CIFAR-10のSymmetric50%で90%弱だったのであまり正解率高くない?
 モデル予測と特徴量の類似性からの情報を利用する特徴擬似ラベル(FPL)を使っている．
 精度Clothing1Mで73.54%
 CIFARは少し低そうな印象
+特徴量に対する擬似ラベルを考えている．
+次やりたかったことに似ている気がする．
 </div></details> 
-- Keywords : `` 'Contrastive Learning'
+- Keywords : `` 'Contrastive Learning?'
 
