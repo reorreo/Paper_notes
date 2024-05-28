@@ -31,14 +31,13 @@ CIFAR-10のSymmetric50%で90%弱だったのであまり正解率高くない?
 トレーニングサンプルと同じラベルを持つサンプルをランダムに選択し，再グループ化する．
 </div></details> 
 
-### Regroup Median Loss for Combating Label Noise (2024:AAAI)
-[[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29250/30360)
-[[Code]](https://github.com/Feng-peng-Li/Regroup-Loss-Median-to-Combat-Label-Noise)
-[[bibtex]](https://ojs.aaai.org/index.php/AAAI/article/view/29250)
+### Learning Accurate Pseudo-Labels via Feature Similarity in the
+[[Paper]](https://www.mdpi.com/2076-3417/14/7/2759/pdf?version=1711447152)
+[[bibtex]](https://www.mdpi.com/2076-3417/14/7/2759)
 <details><summary>summary</summary><div>
-Instanceノイズが登場している(CIFAR)
-CIFAR-10のSymmetric50%で90%弱だったのであまり正解率高くない?
-ノイズのあるサンプルの損失を修正する．
-トレーニングサンプルと同じラベルを持つサンプルをランダムに選択し，再グループ化する．
+モデル予測と特徴量の類似性からの情報を利用する特徴擬似ラベル(FPL)を使っている．
+精度Clothing1Mで73.54%
+CIFARは少し低そうな印象
 </div></details> 
+- Keywords : `` 'Contrastive Learning'
 
