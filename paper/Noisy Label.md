@@ -26,6 +26,9 @@ NLを用いて入力された画像はこの補完ラベルに属さないみた
 [[bibtex]](https://ojs.aaai.org/index.php/AAAI/article/view/29250)
 <details><summary>summary</summary><div>
 Instanceノイズが登場している(CIFAR)
+CIFAR-10のSymmetric50%で90%弱だったのであまり正解率高くない?
+ノイズのあるサンプルの損失を修正する．
+トレーニングサンプルと同じラベルを持つサンプルをランダムに選択し，再グループ化する．
 </div></details> 
 
 https://github.com/Feng-peng-Li/Regroup-Loss-Median-to-Combat-Label-Noise
