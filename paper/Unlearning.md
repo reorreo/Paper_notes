@@ -4,6 +4,7 @@
 ## Title List
 
 1. [MisDetect: Iterative Mislabel Detection using Early Loss(2024)]
+2. [Towards Unbounded Machine Unlearning(2023:NeurIPS)]
 
 
 ---
@@ -28,3 +29,12 @@ memorizationぽいことを使っている
 </div></details> 
 - Keywords : `Mislabel` 
 
+### Towards Unbounded Machine Unlearning(2023:NeurIPS)
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/062d711fb777322e2152435459e6e9d9-Paper-Conference.pdf)
+[[bibtex]](https://proceedings.neurips.cc/paper_files/paper/2023/hash/062d711fb777322e2152435459e6e9d9-Abstract-Conference.html)
+<details><summary>summary</summary><div>
+忘却させる際に，忘却エラーが大きくなりすぎるとMIA(メンバーシップ推論攻撃)に対して脆弱になってしまうから．
+忘却の定義を新たにしている．
+教師生徒モデルを使っている．
+</div></details> 
+- Keywords : `` 
