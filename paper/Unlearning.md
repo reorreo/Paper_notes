@@ -3,12 +3,12 @@
 
 ## Title List
 
-1. [Adaptive Integration of Partial Label Learning and Negative Learning for Enhanced Noisy Label Learning]
+1. [MisDetect: Iterative Mislabel Detection using Early Loss(2024)]
 
 
 ---
 
-### MisDetect: Iterative Mislabel Detection using Early Loss
+### MisDetect: Iterative Mislabel Detection using Early Loss(2024)
 [[Paper]](https://dl.acm.org/doi/pdf/10.14778/3648160.3648161)
 [[bibtex]](https://dl.acm.org/doi/abs/10.14778/3648160.3648161)
 <details><summary>summary</summary><div>
