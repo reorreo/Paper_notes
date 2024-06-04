@@ -38,3 +38,14 @@ memorizationぽいことを使っている
 教師生徒モデルを使っている．
 </div></details> 
 - Keywords : `` 
+
+###  ERM-KTP: Knowledge-Level Machine Unlearning via Knowledge Transfer (2023:CVPR)
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Lin_ERM-KTP_Knowledge-Level_Machine_Unlearning_via_Knowledge_Transfer_CVPR_2023_paper.pdf)
+[[code]](https://github.com/RUIYUN-ML/ERM-KTP/tree/main/ERM-KTP)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2023/html/Lin_ERM-KTP_Knowledge-Level_Machine_Unlearning_via_Knowledge_Transfer_CVPR_2023_paper.html)
+<details><summary>summary</summary><div>
+コードはまだ読みやすそう
+知識?の観点からunlearningを行なっている？
+</div></details> 
+- Keywords : `` 
+
