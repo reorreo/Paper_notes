@@ -46,3 +46,13 @@ CIFARは少し低そうな印象
 </div></details> 
 - Keywords : `` 'Contrastive Learning?'
 
+### LSV-Learner: Support-Vector Contrastive Learning for Robust Learning with Noisy Labels(IEEE2024)
+[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10495194)
+[[code]](https://github.com/yanliji/SV-Learner)
+[[bibtex]](https://ieeexplore.ieee.org/abstract/document/10495194)
+<details><summary>summary</summary><div>
+サポートベクトルマシンを使っている．
+TCLが引用されていた
+精度が高い
+</div></details> 
+- Keywords : `` 'Contrastive Learning?'
