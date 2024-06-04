@@ -46,6 +46,7 @@ memorizationぽいことを使っている
 <details><summary>summary</summary><div>
 コードはまだ読みやすそう
 知識?の観点からunlearningを行なっている？
+畳み込み層のどかがそのデータに役立っているかを認識してそれを取り除いてる？
 </div></details> 
 - Keywords : `` 
 
