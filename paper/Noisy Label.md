@@ -63,9 +63,11 @@ TCLが引用されていた
 [[bibtex]](https://www.sciencedirect.com/science/article/pii/S0950705124002867)
 <details><summary>summary</summary><div>
 データセットはCIFAR-10N, CIFAR-100Nなどを使っている
+クラスごとにしきい値を用いて判断しており，複数のクラスでしきい値を超えたサンプルはハードとしている．
 データをシグモイド予測に基づいて，サンプルをクリーン，ハード，ノイジーに分割する
 また，ネットワークの表現学習を暗黙的に学習している．
 そのため，対照学習も用いている．
+この際ポジティブとしてクリーンセット内の同じクラスのサンプルを選択している．
 精度が高い
 </div></details> 
 - Keywords : `` 'Contrastive Learning?'
