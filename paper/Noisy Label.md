@@ -52,7 +52,20 @@ CIFARは少し低そうな印象
 [[bibtex]](https://ieeexplore.ieee.org/abstract/document/10495194)
 <details><summary>summary</summary><div>
 サポートベクトルマシンを使っている．
+
 TCLが引用されていた
+精度が高い
+</div></details> 
+- Keywords : `` 'Contrastive Learning?'
+
+### SigCo: Eliminate the inter-class competition via sigmoid for learning with noisy labels
+[[Paper]](https://www.sciencedirect.com/science/article/pii/S0950705124002867/pdfft?md5=72834ccd19b2e5df1d78b240ef15b865&pid=1-s2.0-S0950705124002867-main.pdf)
+[[bibtex]](https://www.sciencedirect.com/science/article/pii/S0950705124002867)
+<details><summary>summary</summary><div>
+データセットはCIFAR-10N, CIFAR-100Nなどを使っている
+データをシグモイド予測に基づいて，サンプルをクリーン，ハード，ノイジーに分割する
+また，ネットワークの表現学習をあんよく的に学習している．
+そのため，対照学習も用いている．
 精度が高い
 </div></details> 
 - Keywords : `` 'Contrastive Learning?'
