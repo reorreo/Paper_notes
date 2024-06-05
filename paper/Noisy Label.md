@@ -51,8 +51,8 @@ CIFARは少し低そうな印象
 [[code]](https://github.com/yanliji/SV-Learner)
 [[bibtex]](https://ieeexplore.ieee.org/abstract/document/10495194)
 <details><summary>summary</summary><div>
-サポートベクトルマシンを使っている．
-
+対照学習にサポートベクターマシン(SVM)を導入した(SVCL)を使っている．
+各クラスの特徴分布境界でSVMを考える．ここで，サポートベクトルはクリーンなセットから選択する．
 TCLが引用されていた
 精度が高い
 </div></details> 
