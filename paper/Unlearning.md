@@ -45,6 +45,7 @@ memorizationぽいことを使っている
 [[bibtex]](https://openaccess.thecvf.com/content/CVPR2023/html/Lin_ERM-KTP_Knowledge-Level_Machine_Unlearning_via_Knowledge_Transfer_CVPR_2023_paper.html)
 <details><summary>summary</summary><div>
 コードはまだ読みやすそう
+これクラスを忘れさせている
 知識?の観点からunlearningを行なっている？
 畳み込み層のどかがそのデータに役立っているかを認識してそれを取り除いてる？
 </div></details> 
