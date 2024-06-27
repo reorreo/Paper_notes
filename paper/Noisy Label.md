@@ -71,3 +71,15 @@ TCLが引用されていた
 精度が高い
 </div></details> 
 - Keywords : `` 'Contrastive Learning?'
+
+### Manifold DivideMix: A Semi-Supervised Contrastive Learning Framework for Severe Label Noise(CVPR2024)
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2024W/VAND/papers/Fooladgar_Manifold_DivideMix_A_Semi-Supervised_Contrastive_Learning_Framework_for_Severe_Label_CVPRW_2024_paper.pdf)
+[[code]](https://github.com/Fahim-F/ManifoldDivideMix)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2024W/VAND/html/Fooladgar_Manifold_DivideMix_A_Semi-Supervised_Contrastive_Learning_Framework_for_Severe_Label_CVPRW_2024_paper.html)
+<details><summary>summary</summary><div>
+ベースはDivideMix
+はじめに対照学習を用いて埋め込み空間を学習する(warmup)
+ラベルの信頼度は埋め込み空間に基づいて分布外検出を用いて行われている(TCLと同じやと思う)
+MixUpにサンプル，ラベルの他に埋め込み空間でも結合している
+</div></details> 
+- Keywords : `` 'Contrastive Learning?'
