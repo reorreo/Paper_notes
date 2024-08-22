@@ -60,7 +60,7 @@ TCLが引用されていた
 - Keywords : `` 'Contrastive Learning?'
 
 ### SigCo: Eliminate the inter-class competition via sigmoid for learning with noisy labels
-[[Paper]](https://www.sciencedirect.com/science/article/pii/S0950705124002867/pdfft?md5=72834ccd19b2e5df1d78b240ef15b865&pid=1-s2.0-S0950705124002867-main.pdf)
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Selective-Supervised_Contrastive_Learning_With_Noisy_Labels_CVPR_2022_paper.pdf)
 [[bibtex]](https://www.sciencedirect.com/science/article/pii/S0950705124002867)
 <details><summary>summary</summary><div>
 データセットはCIFAR-10N, CIFAR-100Nなどを使っている
@@ -84,3 +84,15 @@ TCLが引用されていた
 MixUpにサンプル，ラベルの他に埋め込み空間でも結合している
 </div></details> 
 - Keywords : `` 'Contrastive Learning?'
+
+### Selective-Supervised Contrastive Learning With Noisy Labels(CVPR2022)
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2024W/VAND/papers/Fooladgar_Manifold_DivideMix_A_Semi-Supervised_Contrastive_Learning_Framework_for_Severe_Label_CVPRW_2024_paper.pdf)
+[[code]](https://github.com/ShikunLi/Sel-CL)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2022/html/Li_Selective-Supervised_Contrastive_Learning_With_Noisy_Labels_CVPR_2022_paper.html)
+<details><summary>summary</summary><div>
+選択的教師あり対照学習を用いている
+選択手法は，対照サンプルに対して類似度の高いサンプルのラベルで多数決を取る. 1つのクラスが擬似ラベルとして割り振られるイメージ(擬似ラベル1とする)
+擬似ラベル1を基に，類似性の高いサンプルのラベルの割合を擬似ラベルとする．
+</div></details> 
+- Keywords : `` 'Contrastive Learning?'
+
