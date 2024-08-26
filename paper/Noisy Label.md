@@ -107,3 +107,23 @@ FixMatchベースのSSLに教師なし対照学習を組み込んでいる
 - Keywords : `` 'Contrastive Learning?'
 
 
+### Adaptive Contrastive Learning for Learning Robust(2023)
+[[Paper]](https://dl.acm.org/doi/pdf/10.1145/3581783.3612491)
+[[bibtex]](https://dl.acm.org/doi/abs/10.1145/3581783.3612491)
+<details><summary>summary</summary><div>
+ラベルありサンプルの個数をクラス毎に均等にしている．
+FixMatchベースのSSLに教師なし対照学習を組み込んでいる
+</div></details> 
+- Keywords : `` 'Contrastive Learning?'
+
+
+### UniCon: Combating Label Noise Through Uniform Selection and Contrastive Learning(CVPR2022)
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Karim_UniCon_Combating_Label_Noise_Through_Uniform_Selection_and_Contrastive_Learning_CVPR_2022_paper.pdf)
+[[code]](https://github.com/nazmul-karim170/UNICON-Noisy-Label)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2022/html/Karim_UniCon_Combating_Label_Noise_Through_Uniform_Selection_and_Contrastive_Learning_CVPR_2022_paper.html)
+<details><summary>summary</summary><div>
+適応的対照学習法(ACLを提案)→ 固定されたしきい値の代わりに，自己適応的しきい値を使用して，対照学習のペアを選択する
+</div></details> 
+- Keywords : `` 'Contrastive Learning?'
+
+
