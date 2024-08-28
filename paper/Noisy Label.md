@@ -134,4 +134,39 @@ FixMatchベースのSSLに教師なし対照学習を組み込んでいる
 対照学習では，特徴ベクトルに重要度をつけて重要度が高いところの類似性が高くなることを優先して学習している?
 </div></details> 
 
+### Supervised contrastive learning with corrected labels for noisy label learning(2023)
+[[Paper]](https://link.springer.com/content/pdf/10.1007/s10489-023-05018-0.pdf)
+[[code]](https://github.com/ChenyangLu922/SCL2.git)
+[[bibtex]](https://link.springer.com/article/10.1007/s10489-023-05018-0)
+<details><summary>summary</summary><div>
+教師あり対照学習に修正ラベルの概念を導入した．同じソフトラベルを共有するサンプルは正のペアとしている．また，プロトタイプを用いた対照学習も行っている．
+</div></details> 
+- Keywords : `` 'Contrastive Learning?'
+
+### NoiseBox: Towards More Efficient and Effective Learning with Noisy Labels(IEEE2024)
+[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10594806)
+[[bibtex]](https://ieeexplore.ieee.org/abstract/document/10594806)
+<details><summary>summary</summary><div>
+NoiseBoxを導入した学習法．精度がすごく高い．NoiseBoxがしっかり理解できてないが同一のアーキテクトを学習している感じだと考える．
+</div></details> 
+- Keywords : `` 'Contrastive Learning?'
+
+### Learning with Structural Labels for Learning with Noisy Labels (CVPR2024)
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Kim_Learning_with_Structural_Labels_for_Learning_with_Noisy_Labels_CVPR_2024_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2024/html/Kim_Learning_with_Structural_Labels_for_Learning_with_Noisy_Labels_CVPR_2024_paper.html)
+<details><summary>summary</summary><div>
+CIFAR-10 Sym.20%の正解率97%超えていた．
+分布情報構造ラベルを導入した．これは，
+</div></details> 
+- Keywords : `` 
+
+### Learning with Structural Labels for Learning with Noisy Labels (CVPR2024)
+[[Paper]](https://arxiv.org/pdf/2401.04390)
+[[bibtex]](https://arxiv.org/abs/2401.04390)
+<details><summary>summary</summary><div>
+CIFAR-10 Sym.20%の正解率97%超えていた．
+mineネットワークと補助ネットワークを使って学習していた．
+補助ネットワークは擬似ラベルを推定するために存在する．
+</div></details> 
+- Keywords : `` 
 
