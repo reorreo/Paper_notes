@@ -126,4 +126,12 @@ FixMatchベースのSSLに教師なし対照学習を組み込んでいる
 </div></details> 
 - Keywords : `` 'Contrastive Learning?'
 
+## RankMatch: Fostering Confidence and Consistency in Learning with Noisy Labels(ICCV2023):RankMatch
+[[Paper]](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_RankMatch_Fostering_Confidence_and_Consistency_in_Learning_with_Noisy_Labels_ICCV_2023_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_RankMatch_Fostering_Confidence_and_Consistency_in_Learning_with_Noisy_Labels_ICCV_2023_paper.html)
+<details><summary>summary</summary><div>
+信頼投票によるサンプリングを導入 → 信頼できるサンプルからの重心をクラスタ平均とする(各クラスプロトタイプ複数個できる感じやと思う)
+対照学習では，特徴ベクトルに重要度をつけて重要度が高いところの類似性が高くなることを優先して学習している?
+</div></details> 
+
 
