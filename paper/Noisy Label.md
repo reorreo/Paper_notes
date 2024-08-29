@@ -147,7 +147,7 @@ FixMatchベースのSSLに教師なし対照学習を組み込んでいる
 [[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10594806)
 [[bibtex]](https://ieeexplore.ieee.org/abstract/document/10594806)
 <details><summary>summary</summary><div>
-NoiseBoxを導入した学習法．精度がすごく高い．NoiseBoxがしっかり理解できてないが同一のアーキテクトを学習している感じだと考える．
+NoiseBoxを導入した学習法．精度がすごく高い．既存のサンプル選択の多くと組み合わせることが可能
 </div></details> 
 - Keywords : `` 'Contrastive Learning?'
 
