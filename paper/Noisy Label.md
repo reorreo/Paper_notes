@@ -160,7 +160,7 @@ CIFAR-10 Sym.20%の正解率97%超えていた．
 </div></details> 
 - Keywords : `` 
 
-### Learning with Structural Labels for Learning with Noisy Labels (CVPR2024)
+### Learning with Noisy Labels Interconnection of Two Expectation-Maximizations (CVPR2024)
 [[Paper]](https://arxiv.org/pdf/2401.04390)
 [[bibtex]](https://arxiv.org/abs/2401.04390)
 <details><summary>summary</summary><div>
@@ -169,4 +169,3 @@ mineネットワークと補助ネットワークを使って学習していた�
 補助ネットワークは擬似ラベルを推定するために存在する．
 </div></details> 
 - Keywords : `` 
-
