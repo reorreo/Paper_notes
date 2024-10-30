@@ -169,3 +169,58 @@ mineネットワークと補助ネットワークを使って学習していた�
 補助ネットワークは擬似ラベルを推定するために存在する．
 </div></details> 
 - Keywords : `` 
+
+### Subclass-Dominant Label Noise: A Counterexample for the Success of Early Stopping
+[[Paper]](Subclass-Dominant Label Noise: A Counterexample for the Success of Early Stopping)
+[[code]](https://github.com/tmllab/2023_NeurIPS_SDN)
+[[bibtex]](https://proceedings.neurips.cc/paper_files/paper/2023/hash/d763b4a2dde0ae7b77498516ce9f439e-Abstract-Conference.html)
+<details><summary>summary</summary><div>
+NoiseClusterの基本原理は「レイターストッピング（later stopping）」に基づいている。従来はノイズデータが時間とともに表現を劣化させると考えられていたが，本研究では，レイターストッピングによって得られる長期間トレーニングされた表現が，ノイズのある例の高次の意味をより効果的に捉えることができることを示している。これにより，特徴が似ているノイズのある例の埋め込みが互いに近づくクラスタリング効果が生じる。
+具体的には，まずネットワークのトレーニングをレイターストッピングで停止した後，特徴密度に基づいてこれらの特徴をクラスごとにグループ化し，最も大きなグループを「クリーングループ」として識別する。これは正しいラベルである可能性が高いためであり，残りのグループは「誤ラベルの可能性があるグループ」として扱う。
+</div></details> 
+- Keywords : `` 
+
+### BPT-PLR: A Balanced Partitioning and Training Framework with
+Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
+[[Paper]](file:///Users/reo/Desktop/entropy-26-00589.pdf)
+[[code]](https://github.com/LanXiaoPang613/BPT-PLR)
+[[bibtex]](https://www.mdpi.com/1099-4300/26/7/589)
+<details><summary>summary</summary><div>
+本研究では「BPT-PLR」と呼ばれる，擬似ラベル緩和コントラスト損失を用いたバランス分割・訓練フレームワークを提案する。このフレームワークは，2次元ガウス混合モデルを用いたバランス分割プロセス（BP-GMM）と，擬似ラベル緩和コントラスト損失を用いた半教師ありオーバーサンプリング訓練プロセス（SSO-PLR）という2つの重要なプロセスから構成される。前者は，意味的な特徴情報とモデルの予測結果の両方を利用してノイズラベルを識別し，分割されたサブセット間のクラスバランスを可能な限り保つためのバランス調整戦略を導入する。後者は，最新の擬似ラベル緩和コントラスト損失を採用して教師なしコントラスト損失を置き換え，半教師あり学習と教師なしコントラスト損失間の最適化の衝突を軽減し，性能を向上させる。
+精度はめっちゃ高い
+</div></details> 
+- Keywords : `` 
+
+### Enhancing Noisy Label Learning Via Unsupervised Contrastive Loss with Label Correction Based on Prior Knowledge
+Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
+[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10446840)
+[[code]](https://github.com/LanXiaoPang613/BPT-PLR)
+[[bibtex]](https://ieeexplore.ieee.org/abstract/document/10446840)
+<details><summary>summary</summary><div>
+本手法では，事前学習済みの視覚・言語モデルの事前知識を導入することで，NLLの学習プロセスに依存せずにクリーンサンプルを効果的に選択することが可能となる。
+提案手法では，データセット内の画像とラベルを事前学習済みの視覚と言語モデルによって構築された潜在空間に埋め込み，埋め込み表現間の距離に基づいてラベル修正を行う．
+CIFAR-10,100のSym.80,90%しか実験してないが，CIFAR-10では，Sym.20%とあまり変わらない正解率(96.8)．CIFAR-100でも70を超えている．
+</div></details> 
+- Keywords : `` 
+
+### ProMix: Combating Label Noise via Maximizing Clean Sample Utility
+Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
+[[Paper]](https://arxiv.org/pdf/2207.10276)
+[[code]](https://github.com/Justherozen/ProMix)
+[[bibtex]](https://arxiv.org/abs/2207.10276)
+<details><summary>summary</summary><div>
+観測されたラベルに対して高い予測スコアを持つサンプルを収集することで，基礎となるクラスごとの選択セットを動的に拡張する「進行的選択メカニズム」を提案する。
+この最大選択手順には，SSLに対する副作用が伴う可能性がある。第一に，クリーンサンプルが異なるラベル間で均等に分布しない可能性があり，ラベル分布に偏りが生じる。第二に，選択手順と半教師あり学習手順が緊密に依存しているため，自らのエラーを繰り返し確認する「確認バイアス」に起因する問題が発生する可能性がある。これらの問題を軽減するために，以下の2つの主要な要素を含む「デバイアス化SSLトレーニングフレームワーク」を開発した。1つ目は補助的な擬似ヘッドで，信頼性の低い擬似ラベルの生成と利用を分離し，モデルがエラーを自己確認することを防ぐものである。2つ目は，偏った擬似ラベルとクロスエントロピー損失を同時に補正するキャリブレーションアルゴリズムを組み込むことである。
+精度高い．特に低ノイズ率に強い
+</div></details> 
+- Keywords : `` 
+
+### ProMix: Combating Label Noise via Maximizing Clean Sample Utility
+Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
+[[Paper]](file:///Users/reo/Desktop/entropy-26-00308-v2.pdf)
+[[bibtex]](https://www.mdpi.com/1099-4300/26/4/308)
+<details><summary>summary</summary><div>
+観測されたラベルに対して高い予測スコアを持つサンプルを収集することで，基礎となるクラスごとの選択セットを動的に拡張する「進本研究では，ラベルノイズのある画像データに効果的に対応するために，ツインコントラストクラスタリングに基づく予測一貫性正則化（TPCR）を提案する。本手法は2つの主要なコンポーネントから成る。サンプルの類似性を正確かつ効率的に特定し，自己教師あり学習に伴うリスクを軽減するために，TPCRは表現学習のフレームワークとしてツインコントラストクラスタリング（TCC）【12】を採用した。TCCをラベル一貫性を反映する表現を生成できるよう改善し，最初のリスクに対処している。TCCのプレテキストタスクが入力サンプルを異なるグループにクラスタリングするため，同じクラスタに属するサンプルは追加計算なしに本質的に類似していると見なすことができ，2つ目のリスクを回避する。次に，改良されたTCCのクラスタリング結果に基づき，各クラスタ内での分類の一貫性を高めるため，モデル出力とプロトタイプ間のクロスエントロピーを罰則化するプロトタイプベースの正則化手法を設計した
+</div></details> 
+- Keywords : `` 
+
