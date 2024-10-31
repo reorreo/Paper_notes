@@ -171,7 +171,7 @@ mineネットワークと補助ネットワークを使って学習していた�
 - Keywords : `` 
 
 ### Subclass-Dominant Label Noise: A Counterexample for the Success of Early Stopping
-[[Paper]](Subclass-Dominant Label Noise: A Counterexample for the Success of Early Stopping)
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/d763b4a2dde0ae7b77498516ce9f439e-Paper-Conference.pdf)
 [[code]](https://github.com/tmllab/2023_NeurIPS_SDN)
 [[bibtex]](https://proceedings.neurips.cc/paper_files/paper/2023/hash/d763b4a2dde0ae7b77498516ce9f439e-Abstract-Conference.html)
 <details><summary>summary</summary><div>
