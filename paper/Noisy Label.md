@@ -212,8 +212,8 @@ CIFAR-10,100のSym.80,90%しか実験してないが，CIFAR-10では，Sym.20%�
 </div></details> 
 - Keywords : `` 
 
-### ProMix: Combating Label Noise via Maximizing Clean Sample Utility
-[[Paper]](file:///Users/reo/Desktop/entropy-26-00308-v2.pdf)
+### Prediction Consistency Regularization for Learning with Noise Labels Based on Contrastive Clustering
+[[Paper]](https://www.mdpi.com/1099-4300/26/4/308/pdf?version=1712068099)
 [[bibtex]](https://www.mdpi.com/1099-4300/26/4/308)
 <details><summary>summary</summary><div>
 観測されたラベルに対して高い予測スコアを持つサンプルを収集することで，基礎となるクラスごとの選択セットを動的に拡張する「進本研究では，ラベルノイズのある画像データに効果的に対応するために，ツインコントラストクラスタリングに基づく予測一貫性正則化（TPCR）を提案する。本手法は2つの主要なコンポーネントから成る。サンプルの類似性を正確かつ効率的に特定し，自己教師あり学習に伴うリスクを軽減するために，TPCRは表現学習のフレームワークとしてツインコントラストクラスタリング（TCC）【12】を採用した。TCCをラベル一貫性を反映する表現を生成できるよう改善し，最初のリスクに対処している。TCCのプレテキストタスクが入力サンプルを異なるグループにクラスタリングするため，同じクラスタに属するサンプルは追加計算なしに本質的に類似していると見なすことができ，2つ目のリスクを回避する。次に，改良されたTCCのクラスタリング結果に基づき，各クラスタ内での分類の一貫性を高めるため，モデル出力とプロトタイプ間のクロスエントロピーを罰則化するプロトタイプベースの正則化手法を設計した
