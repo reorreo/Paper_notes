@@ -180,8 +180,7 @@ NoiseClusterの基本原理は「レイターストッピング（later stopping
 </div></details> 
 - Keywords : `` 
 
-### BPT-PLR: A Balanced Partitioning and Training Framework with
-Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
+### BPT-PLR: A Balanced Partitioning and Training Framework with Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
 [[Paper]](file:///Users/reo/Desktop/entropy-26-00589.pdf)
 [[code]](https://github.com/LanXiaoPang613/BPT-PLR)
 [[bibtex]](https://www.mdpi.com/1099-4300/26/7/589)
@@ -192,7 +191,6 @@ Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
 - Keywords : `` 
 
 ### Enhancing Noisy Label Learning Via Unsupervised Contrastive Loss with Label Correction Based on Prior Knowledge
-Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
 [[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10446840)
 [[code]](https://github.com/LanXiaoPang613/BPT-PLR)
 [[bibtex]](https://ieeexplore.ieee.org/abstract/document/10446840)
@@ -204,7 +202,6 @@ CIFAR-10,100のSym.80,90%しか実験してないが，CIFAR-10では，Sym.20%�
 - Keywords : `` 
 
 ### ProMix: Combating Label Noise via Maximizing Clean Sample Utility
-Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
 [[Paper]](https://arxiv.org/pdf/2207.10276)
 [[code]](https://github.com/Justherozen/ProMix)
 [[bibtex]](https://arxiv.org/abs/2207.10276)
@@ -216,7 +213,6 @@ Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
 - Keywords : `` 
 
 ### ProMix: Combating Label Noise via Maximizing Clean Sample Utility
-Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning
 [[Paper]](file:///Users/reo/Desktop/entropy-26-00308-v2.pdf)
 [[bibtex]](https://www.mdpi.com/1099-4300/26/4/308)
 <details><summary>summary</summary><div>
