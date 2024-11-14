@@ -220,3 +220,12 @@ CIFAR-10,100のSym.80,90%しか実験してないが，CIFAR-10では，Sym.20%�
 </div></details> 
 - Keywords : `` 
 
+### Learning transferable visual models from natural language supervision
+[[Paper]](http://proceedings.mlr.press/v139/radford21a/radford21a.pdf)
+[[code]](https://github.com/OpenAI/CLIP)
+[[bibtex]](http://proceedings.mlr.press/v139/radford21a)
+<details><summary>summary</summary><div>
+CLIP
+</div></details> 
+- Keywords : ``
+
