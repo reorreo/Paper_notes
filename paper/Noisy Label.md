@@ -229,3 +229,13 @@ CLIP
 </div></details> 
 - Keywords : ``
 
+### Improving CLIP Robustness with Knowledge Distillation and Self-Training
+[[Paper]](https://arxiv.org/pdf/2309.10361)
+[[code]](https://github.com/OpenAI/CLIP)
+[[bibtex]](https://arxiv.org/abs/2309.10361)
+<details><summary>summary</summary><div>
+CLIPを教師なし学習で再学習している
+教師あり学習の参考にできそう
+</div></details> 
+- Keywords : ``
+
