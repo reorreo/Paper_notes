@@ -239,3 +239,12 @@ CLIPを教師なし学習で再学習している
 </div></details> 
 - Keywords : ``
 
+### Robust Noisy Label Learning via Two-Stream Sample Distillation
+[[Paper]](https://arxiv.org/pdf/2404.10499)
+[[bibtex]]([https://arxiv.org/abs/2309.10361](https://arxiv.org/abs/2404.10499?utm_source=chatgpt.com))
+<details><summary>summary</summary><div>
+この手法では、サンプル選択とラベル補正を組み合わせ、ノイズの多いラベルを持つデータセットに対して、学習中に高品質なサンプルを抽出するTwo-Stream Sample Distillation（TSSD）フレームワークが提案されている。CIFAR-10やCIFAR-100などでの実験において、ノイズの影響を受けにくいモデルの学習が可能であることが示されている。精度が高い
+</div></details> 
+- Keywords : ``
+
+
