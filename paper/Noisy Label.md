@@ -4,9 +4,31 @@
 
 ## Title List
 
-1. [Adaptive Integration of Partial Label Learning and Negative Learning for Enhanced Noisy Label Learning]
+1. [Adaptive Integration of Partial Label Learning and Negative Learning for Enhanced Noisy Label Learning (2024:AAAI)]
 2. [Regroup Median Loss for Combating Label Noise (2024:AAAI)]
 3. [Learning Accurate Pseudo-Labels via Feature Similarity in the(MDPI)]
+4. [LSV-Learner: Support-Vector Contrastive Learning for Robust Learning with Noisy Labels (IEEE2024)]
+5. [SigCo: Eliminate the inter-class competition via sigmoid for learning with noisy labels (CVPR2022)]
+6. [Manifold DivideMix: A Semi-Supervised Contrastive Learning Framework for Severe Label Noise (CVPR2024)]
+7. [Selective-Supervised Contrastive Learning With Noisy Labels (CVPR2022)]
+8. [UniCon: Combating Label Noise Through Uniform Selection and Contrastive Learning (CVPR2022)]
+9. [Adaptive Contrastive Learning for Learning Robust (2023)]
+10. [UniCon: Combating Label Noise Through Uniform Selection and Contrastive Learning (CVPR2022)]
+11. [RankMatch: Fostering Confidence and Consistency in Learning with Noisy Labels (ICCV2023)]
+12. [Supervised contrastive learning with corrected labels for noisy label learning (2023)]
+13. [NoiseBox: Towards More Efficient and Effective Learning with Noisy Labels (IEEE2024)]
+14. [Learning with Structural Labels for Learning with Noisy Labels (CVPR2024)]
+15. [Learning with Noisy Labels Interconnection of Two Expectation-Maximizations (CVPR2024)]
+16. [Subclass-Dominant Label Noise: A Counterexample for the Success of Early Stopping (NeurIPS2023)]
+17. [BPT-PLR: A Balanced Partitioning and Training Framework with Pseudo-Label Relaxed Contrastive Loss for Noisy Label Learning]
+18. [Enhancing Noisy Label Learning Via Unsupervised Contrastive Loss with Label Correction Based on Prior Knowledge]
+19. [ProMix: Combating Label Noise via Maximizing Clean Sample Utility]
+20. [Prediction Consistency Regularization for Learning with Noise Labels Based on Contrastive Clustering]
+21. [Learning transferable visual models from natural language supervision]
+22. [Improving CLIP Robustness with Knowledge Distillation and Self-Training]
+23. [Robust Noisy Label Learning via Two-Stream Sample Distillation]
+24. [CLIPCleaner: Cleaning Noisy Labels with CLIP]
+25. [Vision-Language Models are Strong Noisy Label Detectors]
 
 ---
 
@@ -247,4 +269,21 @@ CLIPを教師なし学習で再学習している
 </div></details> 
 - Keywords : ``
 
+### CLIPCleaner: Cleaning Noisy Labels with CLIP
+[[Paper]](https://dl.acm.org/doi/pdf/10.1145/3664647.3680664)
+[[bibtex]](https://dl.acm.org/doi/abs/10.1145/3664647.3680664)
+<details><summary>summary</summary><div>
+clipの予測値使って学習している．
+</div></details> 
+- Keywords : ``
+
+
+### Vision-Language Models are Strong Noisy Label Detectors
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/6af08ba9468f0daca4b8dd388cb95824-Paper-Conference.pdf)
+[[bibtex]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/6af08ba9468f0daca4b8dd388cb95824-Abstract-Conference.html)
+<details><summary>summary</summary><div>
+clipをファインチューニングしている
+精度すごく高い
+</div></details> 
+- Keywords : ``
 
