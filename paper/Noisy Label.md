@@ -287,3 +287,30 @@ clipをファインチューニングしている
 </div></details> 
 - Keywords : ``
 
+### FedPPO: Reinforcement Learning-Based Client Selection for Federated Learning With Heterogeneous Data
+[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10909702)
+[[bibtex]](https://ieeexplore.ieee.org/abstract/document/10909702)
+<details><summary>summary</summary><div>
+通信，計算コストを削減することを目的としている．
+主成分分析を用いて，行動探索空間を縮小することで効率的に強化学習を行っている．
+</div></details> 
+- Keywords : ``
+
+### Reinforcement Learning-Guided Semi-Supervised Learning
+[[Paper]](https://arxiv.org/abs/2405.01760)
+[[bibtex]](https://arxiv.org/pdf/2405.01760)
+<details><summary>summary</summary><div>
+半教師あり学習にRL損失を導入している．
+本論文では、SSLを一方アームドバンディット問題として定式化し、重み付き報酬に基づく革新的なRL損失を導入して予測モデルの学習を適応的に導く、新しい強化学習（RL）ガイド付きSSL手法 RLGSSL を提案します。
+</div></details> 
+- Keywords : ``
+
+### Domain adaptation in reinforcement learning: a comprehensive and systematic study
+[[Paper]](https://link.springer.com/content/pdf/10.1631/FITEE.2300668.pdf)
+[[bibtex]](https://link.springer.com/article/10.1631/FITEE.2300668)
+<details><summary>summary</summary><div>
+ドメイン適応に強化学習を追加している
+
+
+</div></details> 
+- Keywords : ``
