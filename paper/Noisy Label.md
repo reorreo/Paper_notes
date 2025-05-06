@@ -317,3 +317,26 @@ clipをファインチューニングしている
 </div></details> 
 - Keywords : ``
 
+### Design and Application of Adaptive Image Recognition Algorithm Based on Deep Reinforcement Learning
+[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10667548)
+[[pdf name]](Design_and_Application_of_Adaptive_Image_Recognition_Algorithm_Based_on_Deep_Reinforcement_Learning)
+[[bibtex]](https://ieeexplore.ieee.org/abstract/document/10667548)
+<details><summary>summary</summary><div>
+強化学習とインクリメンタルラーニングフレームワークを用いている．
+noisy labelsではない．
+
+GPTによる翻訳
+本論文では、深層強化学習（Deep Reinforcement Learning, DRL）に基づいた適応的画像認識アルゴリズムの設計と応用について提案している。従来のCNNモデルは、入力分布の変化に弱く、汎化能力に課題があることから、本研究では次の3つの工夫を導入している。
+	1.	ResNetとDenseNetを融合したハイブリッドCNNの設計
+　ResNetのショートカット接続とDenseNetの密結合構造を組み合わせることで、勾配消失の問題を緩和し、特徴伝搬を改善。パラメータ数を約20%削減しつつ、分類精度を向上。
+	2.	適応的データ拡張（Adaptive Data Augmentation）
+　損失関数の勾配に基づき、データ拡張の種類や強度を動的に調整。これにより、データ分布の変化に柔軟に対応し、モデルの汎化性能を向上。
+	3.	効率的オンライン学習フレームワークの構築
+　新カテゴリや環境変化に対して、既存の特徴抽出層は凍結し、分類層のみを更新。また、パラメータの一部だけをファインチューニングすることで計算コストを最大90%削減。過学習を防ぎつつ、モデルが継続的に知識を吸収可能にしている。
+
+さらに、強化学習を用いた動的ハイパーパラメータ制御や、知識勾配に基づくインクリメンタル学習も導入されている。実験では、CIFAR-10およびImageNetのサブセットを用いた画像分類タスクにおいて、ベースラインと比較して5%以上の認識精度向上を実現。特に転移学習や新規カテゴリへの適応で高い頑健性を示した。
+
+結論として、本研究は動的環境への適応力と学習効率を備えた、知能的かつ拡張可能な視覚解析システムの構築に向けた新たな方向性を示している。
+</div></details> 
+- Keywords : ``
+
