@@ -319,13 +319,16 @@ clipをファインチューニングしている
 
 ### Design and Application of Adaptive Image Recognition Algorithm Based on Deep Reinforcement Learning
 [[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10667548)
-[[pdf name]](Design_and_Application_of_Adaptive_Image_Recognition_Algorithm_Based_on_Deep_Reinforcement_Learning)
 [[bibtex]](https://ieeexplore.ieee.org/abstract/document/10667548)
 <details><summary>summary</summary><div>
+
+(pdf):Design_and_Application_of_Adaptive_Image_Recognition_Algorithm_Based_on_Deep_Reinforcement_Learning
+
 強化学習とインクリメンタルラーニングフレームワークを用いている．
 noisy labelsではない．
 
 GPTによる翻訳
+
 本論文では、深層強化学習（Deep Reinforcement Learning, DRL）に基づいた適応的画像認識アルゴリズムの設計と応用について提案している。従来のCNNモデルは、入力分布の変化に弱く、汎化能力に課題があることから、本研究では次の3つの工夫を導入している。
 	1.	ResNetとDenseNetを融合したハイブリッドCNNの設計
 　ResNetのショートカット接続とDenseNetの密結合構造を組み合わせることで、勾配消失の問題を緩和し、特徴伝搬を改善。パラメータ数を約20%削減しつつ、分類精度を向上。
