@@ -343,3 +343,88 @@ GPTによる翻訳
 </div></details> 
 - Keywords : ``
 
+### Harnessing deep reinforcement learning algorithms for image categorization: A multi algorithm approach
+[[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10667548)
+[[bibtex]](https://www.sciencedirect.com/science/article/abs/pii/S0952197624010832)
+<details><summary>summary</summary><div>
+
+PDFは有料やから開いていない
+
+強化学習
+noisy labelsではない．
+
+GPTによる翻訳
+概要:
+
+本研究では、深層強化学習（Deep Reinforcement Learning, DRL）アルゴリズムを画像分類タスクに適用し、その性能を複数のベンチマークデータセット上で比較検討しています。
+
+研究の背景と目的:
+
+画像分類はコンピュータビジョンにおける基本的な課題であり、従来は主に教師あり学習手法が用いられてきました。しかし、DRLの発展により、エージェントが環境との相互作用を通じて学習する新たなアプローチが可能となっています。本研究の目的は、異なるDRLアルゴリズムを画像分類に適用し、その有効性と性能を評価することです。
+
+結論:
+
+本研究は、DRLアルゴリズムが画像分類タスクにおいて有望な手法であることを示しています。特に、Dueling DQNとPPOは高い分類精度を達成し、A3Cは学習の安定性に寄与することが確認されました。これらの結果は、DRLを画像分類に応用する際の有効な選択肢となる可能性を示唆しています。
+</div></details> 
+- Keywords : ``
+
+### Image Classification by Reinforcement Learning With Two-State Q-Learning
+[[Paper]](https://arxiv.org/pdf/2007.01298)
+[[bibtex]](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119792642.ch9)
+<details><summary>summary</summary><div>
+
+(PDF):s12530-024-09632-2
+
+強化学習
+noisy labelsではない．
+
+本研究は、深層強化学習（Deep Reinforcement Learning, DRL）を応用した画像分類アルゴリズムの体系的な評価と比較を行ったものである。従来の画像分類は主に教師あり学習に依存していたが、本研究は探索と報酬に基づいて最適戦略を学習するDRLの有効性を検証することを目的としている。
+
+主な貢献
+	1.	5つの代表的なDRLベース分類アルゴリズム（DQN, DDQN, Dueling DQN, A3C, PPO）を選定し、比較。
+	2.	実験にはMNIST、CIFAR-10、Fashion-MNIST、SVHNといった標準的な画像分類データセットを使用。
+	3.	比較指標として、分類精度、訓練時間、報酬獲得率、安定性を用いた。
+	4.	さらに、異なるDRL構造や損失関数、報酬設計、割引率γなどの要因が性能に与える影響について詳細に解析した。
+
+主な結果
+	•	**PPO（Proximal Policy Optimization）とA3C（Asynchronous Advantage Actor-Critic）**が多くの評価指標において最も優れた性能を示した。
+	•	Dueling DQNはDQNよりも優れた安定性を持ち、報酬設計が学習の効率に大きな影響を与えることが確認された。
+	•	ただし、DRLベースの分類器は従来のCNN分類器と比べて精度でやや劣る一方で、学習戦略の柔軟性やロバスト性において利点がある。
+
+結論
+
+DRLは、画像分類タスクにおいて完全に教師ありな手法の代替にはならないが、探索的・自己強化的学習が必要な場面において有用である。また、報酬関数や状態設計が精度向上に大きく寄与するため、今後はこの設計面の最適化が鍵となる。
+- Keywords : ``
+
+### Adaptive patch selection to improve Vision Transformers through Reinforcement Learning
+[[Paper]](https://link.springer.com/article/10.1007/s10489-025-06516-z)
+[[bibtex]](https://link.springer.com/article/10.1007/s10489-025-06516-z)
+<details><summary>summary</summary><div>
+
+(PDF):s10489-025-06516-z
+
+ViTを強化学習で効率的に学習している．
+AgentViT: Reinforcement Learning for Token Sparsification in Vision Transformers
+
+概要:
+
+本研究は、Vision Transformer（ViT）の計算効率を向上させるために、強化学習（RL）を用いた動的なトークン選択手法「AgentViT」を提案する。ViTではすべてのパッチを同等に処理するため、計算コストが高くなる問題がある。AgentViTは、ViTの注意機構から得られる情報をもとに重要なパッチのみを選択し、無駄な計算を削減する。
+
+主な貢献:
+	1.	新しいRLフレームワークの導入:
+	•	Deep Q-Network（DQN）に基づくポリシーにより、画像のパッチ選択を動的に行う。
+	•	状態はViTの最初の注意層から得られる平均注意スコアに基づく。
+	•	報酬関数は精度と計算効率のバランスを考慮。
+	2.	高い汎化性能:
+	•	AgentViTはデータセットやモデルアーキテクチャを問わず、パッチ選択のポリシーを自律的に最適化する。
+	•	過剰な削減（over-pruning）や不足（under-pruning）を防ぐ機構を備える。
+	3.	評価実験:
+	•	CIFAR-10、ImageNetなど複数の画像分類ベンチマークで実験。
+	•	AgentViTは、精度を維持しつつ推論時間を大幅に削減。
+	•	他のトークン削減法（DynamicViTなど）と比較して優れた性能を示す。
+
+結論:
+
+AgentViTは、ViTのパッチ処理において、効率と精度を両立させる新しい枠組みを提供する。強化学習により、事前定義されたルールに依存せず適応的にトークンを選択することで、さまざまなタスクやモデルに対して高い適用性を持つ。
+- Keywords : ``
+
