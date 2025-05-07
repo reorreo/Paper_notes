@@ -428,3 +428,35 @@ AgentViT: Reinforcement Learning for Token Sparsification in Vision Transformers
 AgentViTは、ViTのパッチ処理において、効率と精度を両立させる新しい枠組みを提供する。強化学習により、事前定義されたルールに依存せず適応的にトークンを選択することで、さまざまなタスクやモデルに対して高い適用性を持つ。
 - Keywords : ``
 
+### Adaptive patch selection to improve Vision Transformers through Reinforcement Learning
+[[Paper]](https://link.springer.com/article/10.1007/s10489-025-06516-z)
+[[bibtex]](https://link.springer.com/article/10.1007/s10489-025-06516-z)
+<details><summary>summary</summary><div>
+
+(PDF):s10489-025-06516-z
+
+ViTを強化学習で効率的に学習している．
+AgentViT: Reinforcement Learning for Token Sparsification in Vision Transformers
+
+概要:
+
+本研究は、Vision Transformer（ViT）の計算効率を向上させるために、強化学習（RL）を用いた動的なトークン選択手法「AgentViT」を提案する。ViTではすべてのパッチを同等に処理するため、計算コストが高くなる問題がある。AgentViTは、ViTの注意機構から得られる情報をもとに重要なパッチのみを選択し、無駄な計算を削減する。
+
+主な貢献:
+	1.	新しいRLフレームワークの導入:
+	•	Deep Q-Network（DQN）に基づくポリシーにより、画像のパッチ選択を動的に行う。
+	•	状態はViTの最初の注意層から得られる平均注意スコアに基づく。
+	•	報酬関数は精度と計算効率のバランスを考慮。
+	2.	高い汎化性能:
+	•	AgentViTはデータセットやモデルアーキテクチャを問わず、パッチ選択のポリシーを自律的に最適化する。
+	•	過剰な削減（over-pruning）や不足（under-pruning）を防ぐ機構を備える。
+	3.	評価実験:
+	•	CIFAR-10、ImageNetなど複数の画像分類ベンチマークで実験。
+	•	AgentViTは、精度を維持しつつ推論時間を大幅に削減。
+	•	他のトークン削減法（DynamicViTなど）と比較して優れた性能を示す。
+
+結論:
+
+AgentViTは、ViTのパッチ処理において、効率と精度を両立させる新しい枠組みを提供する。強化学習により、事前定義されたルールに依存せず適応的にトークンを選択することで、さまざまなタスクやモデルに対して高い適用性を持つ。
+- Keywords : ``
+
