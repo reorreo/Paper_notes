@@ -431,11 +431,11 @@ AgentViTは、ViTのパッチ処理において、効率と精度を両立させ
 - Keywords : ``
 
 ### Strategic data navigation: information value-based sample selection
-[[Paper]](https://doi.org/10.1007/s10462-024-10813-3)
-[[bibtex]](https://dblp.org/rec/journals/air/BaloghPKB24.bib)
+[[Paper]](https://link.springer.com/content/pdf/10.1007/s10462-024-10813-3.pdf)
+[[bibtex]](https://link.springer.com/article/10.1007/s10462-024-10813-3)
 <details><summary>summary</summary><div>
 
-(PDF):s10462-024-10813-3.pdf
+(PDF):s10462-024-10813-3.p
 
 概要:
 
@@ -456,8 +456,8 @@ AgentViTは、ViTのパッチ処理において、効率と精度を両立させ
 - Keywords : `Supervised learning`, `Classification`, `Sampling efficiency`, `Sample prioritization`, `Reinforcement learning`
 
 ### RL-Selector: Reinforcement Learning-Guided Data Selection via Redundancy Assessment
-[[Paper]](https://arxiv.org/abs/2506.21037)
-[[bibtex]](https://dblp.org/rec/journals/corr/abs-2506.21037.bib)
+[[Paper]](https://arxiv.org/pdf/2506.21037)
+[[bibtex]](https://arxiv.org/abs/2506.21037)
 <details><summary>summary</summary><div>
 
 (PDF):Yang\_Reinforcement\_Learning-Guided\_Data\_Selection\_via\_Redundancy\_Assessment\_ICCV\_2025\_paper.pdf
