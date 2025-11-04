@@ -482,3 +482,54 @@ AgentViTは、ViTのパッチ処理において、効率と精度を両立させ
 </div></details>
 - Keywords : `Data Selection`, `Reinforcement Learning`, `Redundancy Assessment`, `Data-Efficient Training`, `Deep Learning`
 
+### RIME: Robust Preference-based Reinforcement Learning with Noisy Preferences
+[[Paper]](https://arxiv.org/pdf/2402.17257)
+[[bibtex]](https://arxiv.org/abs/2402.17257)
+<details><summary>summary</summary><div>
+	
+概要: サンプル選択には強化学習は使っていない
+
+[cite_start]好みベース強化学習（PbRL）は、人間の好みを報酬信号として利用することで、面倒な報酬関数の設計を不要にします [cite: 4][cite_start]。しかし、既存のPbRL手法はドメイン専門家からの高品質なフィードバックに過度に依存しており [cite: 5][cite_start]、ロバスト性（頑健性）に欠けています [cite: 5][cite_start]。人間のフィードバックにはノイズ（間違い）が含まれやすく [cite: 20][cite_start]、わずか10%のノイズでも性能が劇的に低下することが示されています [cite: 22][cite_start]。本研究は、ノイズの多い好みデータからでも効果的に報酬モデルを学習するためのロバストなPbRLアルゴリズム「RIME」を提案します [cite: 6][cite_start]。RIMEは、サンプル選択ベースの「ノイズ除去識別器」を用いてノイズを動的にフィルタリングし [cite: 7][cite_start]、さらに「報酬モデルのウォームスタート」によって間違った選択が引き起こす累積エラーに対処します [cite: 8]。
+
+主な貢献:
+	1.	**RIMEアルゴリズムの提案:**
+	[cite_start]•	ノイズの多いフィードバックから報酬モデルを効果的に学習するために設計された、ロバストな報酬学習アルゴリズム「RIME」を提示しました [cite: 75]。
+	2.	**ノイズ除去識別器 (Denoising Discriminator):**
+	[cite_start]•	モデルの予測と注釈ラベル間のKLダイバージェンスに基づき、サンプルをフィルタリングする識別器を導入しました [cite: 32, 33, 70, 71]。
+	[cite_start]•	この識別器は、動的な下限しきい値（$\tau_{lower}$）で信頼できるサンプルを選択し [cite: 70, 165][cite_start]、固定の上限しきい値（$\tau_{upper}$）で信頼性が極めて低いサンプルのラベルを反転させます [cite: 70, 167, 168]。
+	3.	**報酬モデルのウォームスタート:**
+	[cite_start]•	間違ったサンプル選択による累積エラーを軽減し [cite: 72][cite_start]、識別器の初期性能を向上させるため、報酬モデルを（ノイズのない）内在的報酬で事前学習（ウォームスタート）させる手法を提案しました [cite: 72, 180, 181]。
+	[cite_start]•	このウォームスタートは、PbRLの「事前学習」から「オンライン学習」へ移行する際に発生する性能のギャップを埋める効果も持ちます [cite: 73, 76]。
+
+結論:
+
+[cite_start]RIMEは、Meta-World（ロボット操作）やDeepMind Control Suite（歩行）などの複雑なタスクにおいて [cite: 218][cite_start]、ノイズの多い好みデータが与えられた場合でも、既存の最先端PbRL手法（PEBBLEなど）の性能を大幅に上回りました [cite: 9, 74, 77, 246][cite_start]。さらに、専門家ではない実際の人間（エラー率約40%）からのフィードバックを用いた実験でも [cite: 486, 493][cite_start]、RIMEはベースラインを圧倒し [cite: 494][cite_start]、タスク（ホッパーの後方宙返り）の学習に成功しました [cite: 494][cite_start]。これにより、RIMEは専門家でないユーザーやクラウドソーシングからの好みデータを活用する道を開き [cite: 545][cite_start]、PbRLの適用可能性を広げることができます [cite: 545, 555]。
+</div></details>
+- Keywords : `Preference-based Reinforcement Learning (PbRL)`, `Learning from Noisy Labels`, `Robust Reward Learning`, `Sample Selection`, `Human-in-the-Loop`, `Denoising Discriminator`
+
+### Policy Learning for Actively Labeled Sample Selection on Lumbar Semi-supervised Classification
+[[Paper]](https://link.springer.com/content/pdf/10.1007/s10278-024-01167-x.pdf)
+[[bibtex]](https://link.springer.com/article/10.1007/s10278-024-01167-x)
+<details><summary>summary</summary><div>
+
+
+
+概要:
+
+[cite_start]医療データのラベル付けは、多大な労力、時間、医学的専門知識を必要とするため困難です [cite: 1519, 1587][cite_start]。この問題に対処するため、半教師あり学習（SSL）がラベルなしデータを活用するために用いられてきました [cite: 1520][cite_start]。しかし、SSLモデルの性能は、ラベル付きデータの質と量に大きく依存します [cite: 1520][cite_start]。本研究は、半教師あり学習と強化学習（RL）ベースのアクティブラーニング（AL）を統合した新しいアーキテクチャ「RL-based SSAL」を提案します [cite: 1522, 1576, 1588][cite_start]。このフレームワークは、SSLネットワークの学習とアクティブなサンプル選択を交互に実行します [cite: 1522, 1591][cite_start]。サンプル選択プロセスを「決定問題」として扱い、強化学習のポリシー学習アプローチを採用しています [cite: 1524, 1592]。
+
+主な貢献:
+	1.	**統一されたSSALアーキテクチャ:**
+	[cite_start]•	半教師あり学習とアクティブラーニングを交互に訓練する、統一されたフレームワーク「RL-based SSAL」を提案しました [cite: 1522, 1591]。
+	[cite_start]•	SSLモデルを事前学習させた後、そのモデルを使って情報価値の高いサンプルを選択し [cite: 1523][cite_start]、ラベル付けされたサンプルを教師ありデータセットに追加してSSLモデルをさらに訓練します [cite: 1523]。
+	2.	**ポリシー学習によるサンプル選択:**
+	[cite_start]•	従来の不確実性ベースのような手動設計された基準とは異なり [cite: 1565][cite_start]、サンプル選択を「ラベルを付けるか否か」の決定問題としてモデル化し [cite: 1524][cite_start]、強化学習エージェントが選択ポリシーを学習します [cite: 1566-1567, 1592]。
+	3.	**新規の報酬関数:**
+	[cite_start]•	ポリシー学習を導くために、予測「信頼度（confidence）」と「不確実性（uncertainty）」の積に基づく新しい報酬関数を設計しました [cite: 1525, 1593]。
+	[cite_start]•	この報酬関数は、「高い信頼度」と「高い不確実性」を同時に示すサンプルを選択することを目的としています [cite: 1525, 1580, 1593][cite_start]。このようなサンプルは、モデルが識別困難でありながら価値が高いとみなされます [cite: 1580-1582, 1593]。
+
+結論:
+
+[cite_start]提案手法（RL-based SSAL）は、収集された腰椎椎間板ヘルニア（LDH）データセットにおいて、ベースラインのSSL（FixMatch）や他のAL手法と比較して一貫して優れた性能を示しました [cite: 1526-1527, 1594][cite_start]。異なるラベル数の設定（例：40, 200, 800）で、ベースラインを3%以上上回る精度を達成しました [cite: 1526, 1802-1804][cite_start]。特筆すべきことに、わずか200枚のラベル付きデータで学習したモデルが、全ラベル付きデータセット（10,000枚以上）で学習したモデルに匹敵する精度（89.32%）を達成し [cite: 1528, 1595][cite_start]、医療画像の注釈コストを大幅に削減できる可能性を示しました [cite: 1595, 1913]。
+</div></details>
+- Keywords : `Semi-supervised learning`, `Active learning`, `Policy learning`, `Reward function`, `Reinforcement Learning`, `Medical Image Classification`
