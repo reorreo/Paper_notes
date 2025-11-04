@@ -430,3 +430,55 @@ AgentViTは、ViTのパッチ処理において、効率と精度を両立させ
 </div></details> 
 - Keywords : ``
 
+### Strategic data navigation: information value-based sample selection
+[[Paper]](https://doi.org/10.1007/s10462-024-10813-3)
+[[bibtex]](https://dblp.org/rec/journals/air/BaloghPKB24.bib)
+<details><summary>summary</summary><div>
+
+(PDF):s10462-024-10813-3.pdf
+
+概要:
+
+[cite_start]教師あり学習（SL）において、学習データのサンプリングは依然として非効率的であり、多くの場合、すべてのデータポイントに等しい価値を割り当てる均一分布に依存しています [cite: 40][cite_start]。しかし、データポイントが持つ情報の価値は一様ではありません [cite: 10][cite_start]。本研究は、強化学習（RL）の分野、特にPrioritized Experience Replay（PER）の原則に着想を得て [cite: 36, 71][cite_start]、教師あり学習における分類精度を向上させるための新しい動的なサンプル優先順位付けアプローチを提案します [cite: 12, 456]。
+
+主な貢献:
+	1.	**RLの優先順位付け手法のSLへの適用:**
+	•	RLにおける探索（Exploration）と活用（Exploitation）のトレードオフが、SLにおけるアンダーフィッティングとオーバーフィッティングの問題に対応すると捉え [cite: 160]、サンプル優先度を動的に更新するフレームワークを提案しました [cite: 195, 199]。
+	2.	**2つの情報価値メトリクスの提案:**
+	•	RLのTD誤差に着想を得た「Probability Error（PB Error）」 [cite: 184, 187]と、よりSLの文脈に即した「Label Change Error（LC Error）」の2つのメトリクスを導入し、サンプルの情報価値を評価します [cite: 232, 235]。
+	3.	**過学習の制御:**
+	•	優先順位付けによる過学習リスクを軽減するため、サンプルの使用頻度（探索項）と情報価値（活用項）のバランスを調整するハイパーパラメータ $c_p$ を導入しました [cite: 167, 172, 248]。
+
+結論:
+
+[cite_start]本アプローチをCIFAR-10、CIFAR-100、TinyImagenetデータセットと複数のアーキテクチャ（ResNet50, Mobilenet V3など）で評価しました [cite: 45, 296, 298][cite_start]。特に「Label Change Error」メトリクスを使用した場合、従来の均一サンプリングと比較して、すべてのケースで一貫して分類精度が向上（例：CIFAR-100で最大+0.817%）することを確認しました [cite: 281, 296, 310][cite_start]。この結果は、提案する動的な優先順位付けが、計算コストを大幅に増加させることなく、モデル性能を効果的に改善することを示しています [cite: 301, 430]。
+</div></details>
+- Keywords : `Supervised learning`, `Classification`, `Sampling efficiency`, `Sample prioritization`, `Reinforcement learning`
+
+### RL-Selector: Reinforcement Learning-Guided Data Selection via Redundancy Assessment
+[[Paper]](https://arxiv.org/abs/2506.21037)
+[[bibtex]](https://dblp.org/rec/journals/corr/abs-2506.21037.bib)
+<details><summary>summary</summary><div>
+
+(PDF):Yang\_Reinforcement\_Learning-Guided\_Data\_Selection\_via\_Redundancy\_Assessment\_ICCV\_2025\_paper.pdf
+
+概要:
+
+[cite_start]大規模データセットを用いた深層学習は、高い計算コストとストレージオーバーヘッドを伴います [cite: 583][cite_start]。これらのデータセットにはしばしば実質的な冗長性が含まれており [cite: 584, 597][cite_start]、データ効率の良い学習手法が求められています。本研究は、データ選択を強化学習（RL）プロセスとして再定式化する新しい手法「RL-Selector」を提案します [cite: 588][cite_start]。RL-Selectorは、データセット内の冗長性を評価し、最も代表的なサンプルを特定することで、性能を損なうことなく学習コストを削減します [cite: 585]。
+
+主な貢献:
+	1.	**ε-sample cover概念の導入:**
+	•	サンプル間の関係性に基づいて冗長性を定量化する「ε-sample cover」という新しい概念を導入しました 。
+	•	理論的に、互いにε-coverされたサンプル（冗長なサンプル）を削除しても、モデルの汎化性能への影響が最小限であることを証明しました [cite: 610, 625, 768]。
+	2.	**RLによる動的な選択ポリシー:**
+	•	データ選択をRLプロセスとしてモデル化し、軽量なA2Cエージェントがε-sample coverを報酬シグナルとして選択ポリシーを最適化します [cite: 588, 612, 616]。
+	•	これにより、従来の静的な評価指標では見落とされていた、学習のダイナミクス [cite: 603, 611]と選択されたサンプルの「グループ効果」 [cite: 601]を考慮することができます。
+	3.	**高い汎化性能と効率の実証:**
+	•	選択されたデータセットで学習したモデルは、学習効率が向上するだけでなく [cite: 590]、フルデータセットで学習したモデルよりも高い汎化性能を達成しました [cite: 590, 856]。
+
+結論:
+
+[cite_start]RL-Selectorは、CIFAR-100やImageNet-1kなどの主要なベンチマークにおいて、既存の最先端（SOTA）データ選択手法を一貫して上回る性能を示しました [cite: 589, 852, 855][cite_start]。さらに、ResNet-50で選択されたデータセットが、ViTやSwin-Transformerなどの異なるアーキテクチャに対しても高い汎化性能（クロスアーキテクチャ汎化）を示すことを実証しました [cite: 622, 894][cite_start]。また、ImageNet-A/R/Hardといったより困難なベンチマークにおいても、フルデータセットで学習したモデルを凌駕する堅牢性と汎化性能が確認されました [cite: 622, 899]。
+</div></details>
+- Keywords : `Data Selection`, `Reinforcement Learning`, `Redundancy Assessment`, `Data-Efficient Training`, `Deep Learning`
+
