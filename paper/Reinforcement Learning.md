@@ -244,3 +244,57 @@ AgentViTは、ViTのパッチ処理において、効率と精度を両立させ
 [cite_start]提案手法（RL-based SSAL）は、収集された腰椎椎間板ヘルニア（LDH）データセットにおいて、ベースラインのSSL（FixMatch）や他のAL手法と比較して一貫して優れた性能を示しました [cite: 1526-1527, 1594][cite_start]。異なるラベル数の設定（例：40, 200, 800）で、ベースラインを3%以上上回る精度を達成しました [cite: 1526, 1802-1804][cite_start]。特筆すべきことに、わずか200枚のラベル付きデータで学習したモデルが、全ラベル付きデータセット（10,000枚以上）で学習したモデルに匹敵する精度（89.32%）を達成し [cite: 1528, 1595][cite_start]、医療画像の注釈コストを大幅に削減できる可能性を示しました [cite: 1595, 1913]。
 </div></details>
 - Keywords : `Semi-supervised learning`, `Active learning`, `Policy learning`, `Reward function`, `Reinforcement Learning`, `Medical Image Classification`
+
+### Policy Learning for Actively Labeled Sample Selection on Lumbar Semi-supervised Classification
+[[Paper]](https://link.springer.com/content/pdf/10.1007/s10278-024-01167-x.pdf)
+[[bibtex]](https://link.springer.com/article/10.1007/s10278-024-01167-x)
+<details><summary>summary</summary><div>
+
+
+
+概要:
+
+[cite_start]医療データのラベル付けは、多大な労力、時間、医学的専門知識を必要とするため困難です [cite: 1519, 1587][cite_start]。この問題に対処するため、半教師あり学習（SSL）がラベルなしデータを活用するために用いられてきました [cite: 1520][cite_start]。しかし、SSLモデルの性能は、ラベル付きデータの質と量に大きく依存します [cite: 1520][cite_start]。本研究は、半教師あり学習と強化学習（RL）ベースのアクティブラーニング（AL）を統合した新しいアーキテクチャ「RL-based SSAL」を提案します [cite: 1522, 1576, 1588][cite_start]。このフレームワークは、SSLネットワークの学習とアクティブなサンプル選択を交互に実行します [cite: 1522, 1591][cite_start]。サンプル選択プロセスを「決定問題」として扱い、強化学習のポリシー学習アプローチを採用しています [cite: 1524, 1592]。
+
+主な貢献:
+	1.	**統一されたSSALアーキテクチャ:**
+	[cite_start]•	半教師あり学習とアクティブラーニングを交互に訓練する、統一されたフレームワーク「RL-based SSAL」を提案しました [cite: 1522, 1591]。
+	[cite_start]•	SSLモデルを事前学習させた後、そのモデルを使って情報価値の高いサンプルを選択し [cite: 1523][cite_start]、ラベル付けされたサンプルを教師ありデータセットに追加してSSLモデルをさらに訓練します [cite: 1523]。
+	2.	**ポリシー学習によるサンプル選択:**
+	[cite_start]•	従来の不確実性ベースのような手動設計された基準とは異なり [cite: 1565][cite_start]、サンプル選択を「ラベルを付けるか否か」の決定問題としてモデル化し [cite: 1524][cite_start]、強化学習エージェントが選択ポリシーを学習します [cite: 1566-1567, 1592]。
+	3.	**新規の報酬関数:**
+	[cite_start]•	ポリシー学習を導くために、予測「信頼度（confidence）」と「不確実性（uncertainty）」の積に基づく新しい報酬関数を設計しました [cite: 1525, 1593]。
+	[cite_start]•	この報酬関数は、「高い信頼度」と「高い不確実性」を同時に示すサンプルを選択することを目的としています [cite: 1525, 1580, 1593][cite_start]。このようなサンプルは、モデルが識別困難でありながら価値が高いとみなされます [cite: 1580-1582, 1593]。
+
+結論:
+
+[cite_start]提案手法（RL-based SSAL）は、収集された腰椎椎間板ヘルニア（LDH）データセットにおいて、ベースラインのSSL（FixMatch）や他のAL手法と比較して一貫して優れた性能を示しました [cite: 1526-1527, 1594][cite_start]。異なるラベル数の設定（例：40, 200, 800）で、ベースラインを3%以上上回る精度を達成しました [cite: 1526, 1802-1804][cite_start]。特筆すべきことに、わずか200枚のラベル付きデータで学習したモデルが、全ラベル付きデータセット（10,000枚以上）で学習したモデルに匹敵する精度（89.32%）を達成し [cite: 1528, 1595][cite_start]、医療画像の注釈コストを大幅に削減できる可能性を示しました [cite: 1595, 1913]。
+</div></details>
+- Keywords : `Semi-supervised learning`, `Active learning`, `Policy learning`, `Reward function`, `Reinforcement Learning`, `Medical Image Classification`
+
+
+### Constraint-Conditioned Policy Optimization for Versatile Safe Reinforcement Learning
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/29906cbd165b78991da2c4dbabc2a04b-Paper-Conference.pdf)
+[[bibtex]](https://proceedings.neurips.cc/paper_files/paper/2023/hash/29906cbd165b78991da2c4dbabc2a04b-Abstract-Conference.html)
+<details><summary>summary</summary><div>
+
+概要:
+
+安全強化学習（Safe RL）は、事前に定義された安全制約（コスト閾値）を守りながら報酬を最大化するエージェントを訓練します。しかし、訓練時とは異なる様々な安全制約に適応できる「多様な（versatile）」安全方策を、再訓練なしで学習することは未だ困難な課題です。本研究は、この「多様な安全RL問題」を定式化し、訓練効率とゼロショット適応能力の要求に応えるため、新しいフレームワーク「Constraint-Conditioned Policy Optimization (CCPO)」を提案します。CCPOは、(1) 未知の閾値条件下の価値関数を近似する「Versatile Value Estimation (VVE)」と、(2) 任意の制約閾値を方策最適化に組み込む「Conditioned Variational Inference (CVI)」の2つのモジュールで構成されます。
+
+主な貢献:
+1.  **多様な安全RL問題の定式化:**
+    • 従来の固定された単一の制約閾値を超える問題として「多様な学習問題（versatile learning problem）」を定義しました。
+    [cite_start]• この課題に対し、再訓練なしで未知の多様な制約閾値にゼロショットで汎化できるCCPOを提案しました [cite: 33-34]。
+2.  **VVEとCVIによるゼロショット適応:**
+    [cite_start]• 価値関数を観測特徴と閾値特徴に線形分解する「VVE」を導入し、未知の閾値に対する価値推定を可能にしました [cite: 97-98, 112]。
+    • 「CVI」により、任意の安全制約 $\epsilon$ を条件として最適なの行動分布を計算（Eステップ）し、それを教師データとして多様な方策 $\pi(a|s, \epsilon)$ を学習（Mステップ）する枠組みを構築しました。
+3.  **理論的・実験的有効性の実証:**
+    [cite_start]• 未知の閾値に対するコスト違反の理論的なバウンド（限界値）を示しました [cite: 37, 184-185]。
+    • 広範な実験により、CCPOがベースライン手法と比較して、安全性とタスク性能の両方で優れており、特に高次元のタスクでその差が顕著であることを示しました。
+
+結論:
+
+[cite_start]本研究は、多様な安全RLという概念を提唱し、CCPOアルゴリズムを提案しました。CCPOは、VVEとCVIという核心的要素により、訓練時に経験しなかったコスト閾値に対しても効率的に適応し、ゼロショット汎化を可能にします [cite: 413-414]。実験結果は、CCPOがベースライン手法よりも安全であり、かつデータ効率（$\epsilon$-sampling efficiency）が大幅に高いことを裏付けています。
+</div></details>
+- Keywords : `Safe Reinforcement Learning`, `Versatile Safe Reinforcement Learning`, `Zero-shot adaptation`, `Policy Optimization`, `Constrained Markov Decision Process`, `Variational Inference`
