@@ -298,3 +298,155 @@ AgentViTは、ViTのパッチ処理において、効率と精度を両立させ
 [cite_start]本研究は、多様な安全RLという概念を提唱し、CCPOアルゴリズムを提案しました。CCPOは、VVEとCVIという核心的要素により、訓練時に経験しなかったコスト閾値に対しても効率的に適応し、ゼロショット汎化を可能にします [cite: 413-414]。実験結果は、CCPOがベースライン手法よりも安全であり、かつデータ効率（$\epsilon$-sampling efficiency）が大幅に高いことを裏付けています。
 </div></details>
 - Keywords : `Safe Reinforcement Learning`, `Versatile Safe Reinforcement Learning`, `Zero-shot adaptation`, `Policy Optimization`, `Constrained Markov Decision Process`, `Variational Inference`
+
+
+### Near-Optimal Distributionally Robust Reinforcement Learning with General $L_{p}$ Norms
+[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/0346c8a510dd15971566a97a241c5e6a-Paper-Conference.pdf)
+[[bibtex]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/0346c8a510dd15971566a97a241c5e6a-Abstract-Conference.html)
+<details><summary>summary</summary><div>
+
+概要:
+
+シミュレーションと実世界のギャップ（sim-to-real gap）に対処するため、分布ロバスト強化学習（RMDPs）は、環境が名目上のモデルから一定の不確実性セット内にある場合に、最悪ケースの性能を最適化します。しかし、RMDPsのサンプル複雑性（学習に必要なデータ量）は、特に一般的な$L_p$ノルムを不確実性セットの距離関数として用いる場合、これまで大きく未解明でした。本研究は、名目MDPからのサンプリングが可能な生成的モデルを仮定し、sa-rectangularおよびs-rectangularという2つの一般的な条件下で、一般化された$L_p$ノルムを用いたRMDPsのサンプル複雑性を分析します。本研究の結果は、RMDPsが標準的なMDPsよりもサンプル効率が高くなり得ることを示唆しています。
+
+主な貢献:
+
+* **sa-rectangular RMDPsのサンプル複雑性:**
+    • 一般的な$L_p$ノルムを用いたsa-rectangular RMDPsのサンプル複雑性について、ほぼ最適 (near-optimal) な上限 $\tilde{O}(\frac{SA}{(1-\gamma)^{2}max\{1-\gamma,C_{g}\sigma\}\epsilon^{2}})$ を導出しました。
+    • この上限のタイトさを確認するため、一致するミニマックス下限 (minimax lower bound) も導出しました。
+* **s-rectangular RMDPsのサンプル複雑性:**
+    [cite_start]• s-rectangular RMDPsに対しても、既存研究のサンプル複雑性を改善する上限を導出しました [cite: 65-67]。
+    • さらに、$L_{\infty}$ノルムを用いた代表的なケースにおいて、s-rectangular RMDPsに対する**初の下限**を導出し、上限のタイトさを検証しました。
+* **RMDPs vs 標準MDPsの比較:**
+    • 本研究の結果は、RMDPsが標準的なRL（サンプル複雑性 $\tilde{O}(\frac{SA}{(1-\gamma)^{3}\epsilon^{2}})$）と比較して、サンプル効率が**同等か、あるいは優れている**（必要なサンプル数が少ない）ことを示しました。
+    • 特に、不確実性のレベル $\sigma$ が比較的大きい場合 ($\sigma \ge 1-\gamma$)、RMDPsのサンプル複雑性は標準RLよりも小さくなります。
+* **s- vs sa-rectangularの比較:**
+    • s-rectangular RMDPsは、sa-rectangular RMDPsよりも複雑な定式化であるにもかかわらず、サンプル要求量の観点からは、解くのが**難しくない**ことを示しました。
+
+結論:
+
+本研究は、生成的モデルの仮定のもと、一般化された$L_p$ノルムによって特徴づけられる不確実性セットを持つRMDPsのサンプル複雑性バウンドを明らかにしました。s-rectangular RMDPsの学習は、sa-rectangular RMDPsと比較してサンプル複雑性の観点で難しくないことを示し、s-rectangularケースに関して初めてミニマックスバウンドを提供しました。さらに、RMDPsのミニマックスサンプル複雑性は、標準的なMDPsの学習に必要なサンプル複雑性よりも**決して大きくならない**ことを実証しました。
+</div></details>
+- Keywords : `Distributionally Robust Reinforcement Learning`, `RMDPs`, `Sample Complexity`, `$L_p$ Norms`, `Minimax Optimal`, `sa-rectangular`, `s-rectangular`
+
+### Frustratingly Easy Regularization on Representation Can Boost Deep Reinforcement Learning
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/He_Frustratingly_Easy_Regularization_on_Representation_Can_Boost_Deep_Reinforcement_Learning_CVPR_2023_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2023/html/He_Frustratingly_Easy_Regularization_on_Representation_Can_Boost_Deep_Reinforcement_Learning_CVPR_2023_paper.html)
+<details><summary>summary</summary><div>
+
+
+概要:
+
+[cite_start]ディープラーニング（DRL）は高次元情報から良い方策を学習しますが、その中核には関連情報を保持し不要な情報を捨てる「表現学習」があります [cite: 2367, 2380][cite_start]。DRLの学習安定化に不可欠なQ-networkとその「ターゲットQ-network」 [cite: 2385-2386] [cite_start]について、両者の表現が持つべき特性はこれまで見過ごされてきました [cite: 2388][cite_start]。本研究は、Q-networkとそのターゲットの表現が、理論的に「識別可能な表現特性（distinguishable representation property）」を満たすべきであることを初めて示しました [cite: 2368, 2392][cite_start]。これは、2つの表現の類似性（内積）に特定の上限が存在することを意味します [cite: 2369, 2486][cite_start]。しかし、実験により、既存のDRLエージェント（特にCURLなど）がこの特性に違反し、準最適な方策に陥る可能性があることを明らかにしました [cite: 2370, 2398, 2500-2501][cite_start]。この問題を解決するため、本研究は**PEER (Policy Evaluation with Easy Regularization on Representation)** という、わずか1行のコードで実装可能な、シンプルかつ効果的な正則化項を提案します [cite: 2371-2372, 2399-2400]。PEERは、この「識別可能な表現特性」を明示的に維持するように働きます。
+
+主な貢献:
+1.  **「識別可能な表現特性」の理論的導出:**
+    * [cite_start]Q-networkの表現 $\Phi(s,a;\Theta_{+})$ とそのターゲットの表現 $\mathbb{E}_{s^{\prime},a^{\prime}}\Phi(s^{\prime},a^{\prime};\Theta_{+}^{\prime})$ の類似性（内積）には、報酬 $r(s,a)$ などに依存する明確な**上限**が存在することを理論的に証明しました（Theorem 3.2） [cite: 2368-2369, 2485-2486]。
+    * [cite_start]これは、最適な方策選択のために、隣接タイムステップ間の表現が十分に「識別可能」であるべきことを示唆します [cite: 2491]。
+2.  **既存手法における特性違反の発見:**
+    * [cite_start]実験を通じて、TD3のようなアルゴリズムはこの特性を維持する傾向がある一方で、CURLのような明示的な表現学習手法がこの特性に違反しうることを示しました [cite: 2397-2398, 2499-2500] (Fig. 1)[cite_start]。この違反が性能低下の一因である可能性を指摘しました [cite: 2370, 2501]。
+3.  **PEER正則化項の提案:**
+    * [cite_start]上記特性を維持するため、Q-networkとターゲットネットワークの表現の**内積を直接正則化する**（類似度を下げる）PEERロス $L_{PEER}$ を提案しました [cite: 2371, 2401, 2506] (Fig. 2)。
+    * [cite_start]PEERは既存の方策評価ロス $\mathcal{L}_{PE}$ に加算するだけでよく（ $\mathcal{L}(\Theta)=\mathcal{L}_{PE}(\Theta)+\beta\mathcal{L}_{PEER}(\Theta)$ ）、実装が極めて容易です [cite: 2372, 2528]。
+    * [cite_start]PEERを用いた場合の収束率の保証も理論的に提供しました [cite: 2372, 2414, 2542-2553]。
+4.  **広範な実験による有効性の実証:**
+    * [cite_start]PEERをTD3、CURL、DrQといった代表的なDRLアルゴリズムに適用し、性能とサンプル効率が大幅に向上することを示しました [cite: 2373, 2403, 2407]。
+    * [cite_start]PyBullet (4/4環境)、DMControl (12タスク中9タスク)、Atari (26ゲーム中19ゲーム) という複数のベンチマークで最先端（SOTA）の性能を達成しました [cite: 2374, 2406]。
+
+結論:
+
+[cite_start]本研究は、DRLにおけるQ-networkとターゲットネットワークの表現間に存在する本質的な「識別可能な表現特性」を初めて理論的に導出しました [cite: 2375, 2722, 2731][cite_start]。既存エージェントがこの特性を違反しがちであることを示し [cite: 2723][cite_start]、この特性を維持するためのシンプルな正則化項PEERを提案しました [cite: 2724][cite_start]。広範な実験の結果、PEERはTD3、CURL、DrQなどのベースアルゴリズムの性能とサンプル効率を大幅に改善すること、また既存の表現学習手法（CURL, DrQ）と直交的（互換性がある）であることが示されました [cite: 2695-2696, 2719, 2725]。
+</div></details>
+- Keywords : `Deep Reinforcement Learning`, `Representation Learning`, `Regularization`, `Q-Learning`, `Target Network`, `Policy Evaluation`
+
+### Regularized Parameter Uncertainty for Improving Generalization in Reinforcement Learning
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Moure_Regularized_Parameter_Uncertainty_for_Improving_Generalization_in_Reinforcement_Learning_CVPR_2024_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content/CVPR2024/html/Moure_Regularized_Parameter_Uncertainty_for_Improving_Generalization_in_Reinforcement_Learning_CVPR_2024_paper.html)
+<details><summary>summary</summary><div>
+
+概要:
+
+[cite_start]強化学習（RL）エージェントが実世界でタスクを実行するには、訓練環境とは異なる「未知の」環境へ汎化する能力が不可欠です。しかし、RLエージェントは訓練環境に過剰適合（over-fitting）しやすく、分布外（out-of-distribution）の汎化性能が低いという課題があります [cite: 2892-2893][cite_start]。教師あり学習の正則化手法（ノイズ注入やパラメータ正則化など）を単純に適用しようとしても、RL特有の性質（例：学習の不安定化、モデルの表現力不足）により限定的な効果しかありませんでした [cite: 2894, 2906, 2909][cite_start]。パラメータの不確実性（ネットワークの重みを固定値ではなく確率分布として扱う）は、この問題の有望な解決策ですが [cite: 2910][cite_start]、従来のKLダイバージェンスによる正則化はRLのノイズが多い学習設定では適用が難しく、汎化目的での利用は進んでいませんでした [cite: 2911-2912, 2981]。本研究は、この問題を解決するため、**SNR PUN (Signal-to-Noise Ratio regulated Parameter Uncertainty Network)** という新しい正則化手法を提案します。
+
+主な貢献:
+1.  **SNR（信号対雑音比）による新しい正則化手法の提案:**
+    * [cite_start]パラメータの不確実性を測る新しい尺度として、各パラメータ分布の平均と標準偏差の比率である「SNR（信号対雑音比）」を導入しました [cite: 2916]。
+    * [cite_start]従来のKLダイバージェンス（特定の事前分布に近づける）の代わりに、各パラメータのSNRが最大閾値 $\Omega_{Max~SNR}$ を超えないように制約する「Max SNR正則化」（$\mathcal{L}^{SNR}$）を提案しました [cite: 2917, 2992-2993]。
+2.  **SNR正則化の理論的分析:**
+    * [cite_start]提案するSNR正則化は、従来のKLダイバージェンスを、より広範な事前分布の集合に対して計算することと等価であることを示しました [cite: 2921-2922, 2999-3000]。
+    * [cite_start]これにより、SNR正則化はKLダイバージェンスよりも柔軟な制約を課すことができ、RLにおける汎化性能の向上に適していることを示しました [cite: 3013-3015] (Fig. 1)。
+3.  **SNR PUNのためのRL学習スキーム:**
+    * 提案手法をPPO（Proximal Policy Optimization）に統合しました。
+    * [cite_start]汎化性能を高めるため、アクター（方策）とクリティック（価値）を分離し、アクターのみを確率的（SNR PUN）にし、クリティックは決定論的なネットワークとすることで学習を安定させました [cite: 2923-2924, 3038-3039]。
+    * [cite_start]さらに、パラメータのサンプリング戦略の変更や、不確実性を最大化する新しい初期化手法を導入しました [cite: 2924, 3030, 3041-3042]。
+4.  **実機転移を含む実験的検証:**
+    * [cite_start]シミュレーション（Cartpole, Acrobotなど）において、未知の環境パラメータ（例：ポールの長さ、質量）に対する汎化性能で、SNR PUNが既存の正則化手法（Dropout, Weight Decay, VIBなど）を大幅に上回ることを示しました [cite: 2897, 3154] (Table 1)。
+    * [cite_start]物理的なCartpole実機への転移実験（sim-to-real）を行い、シミュレーションで汎化性能の高かったSNR PUNのみが実機でのタスク（振り上げ）に成功することを示しました [cite: 2898, 3313-3314] (Fig. 6)。
+
+結論:
+
+[cite_start]本研究は、RLの汎化性能を向上させるため、パラメータの不確実性を「SNR（信号対雑音比）」で正則化する新しい手法「SNR PUN」を提案しました。SNR PUNは、従来のKLダイバージェンスによる正則化の課題を克服し、シミュレーションと実世界の両方で高い汎化性能を示しました。特に、より複雑な環境では適切なSNRのバランスを見つけることが重要であり、本手法はそのトレードオフを制御する有効な手段となります [cite: 3304, 3322-3323]。
+</div></details>
+- Keywords : `Generalization in Reinforcement Learning`, `Regularization`, `Parameter Uncertainty`, `Signal-to-Noise Ratio (SNR)`, `PPO`, `Sim-to-Real`
+
+### Zero-Shot Reinforcement Learning via Function Encoders
+[[Paper]](https://raw.githubusercontent.com/mlresearch/v235/main/assets/ingebrand24a/ingebrand24a.pdf)
+[[bibtex]](https://proceedings.mlr.press/v235/ingebrand24a.html)
+<details><summary>summary</summary><div>
+
+概要:
+
+[cite_start]強化学習（RL）は多くの困難な逐次的意思決定問題を解決できますが、関連するタスク間での「ゼロショット転移」（追加学習なしでの適応）は依然として課題です [cite: 4][cite_start]。この困難さは、現在のタスクが過去に経験したタスクとどう関連しているかをエージェントが理解するための、良い「タスク表現」を見つける点にあります [cite: 5][cite_start]。本研究は、ゼロショット転移を達成するために「関数エンコーダ（Function Encoder）」という新しい表現学習アルゴリズムを提案します [cite: 6][cite_start]。関数エンコーダは、ある関数（例：報酬関数 $R$ や遷移関数 $T$）を、学習された非線形の「基底関数」の重み付き線形結合として表現します [cite: 6-7][cite_start]。この重み（係数）ベクトルは、現在のタスクが過去のタスクとどう関連しているかを示す一貫した表現となり、エージェントはこれ（$c_f$）を方策 $\pi(s, c_f)$ や価値関数 $Q(s, a, c_f)$ の追加入力として受け取ります [cite: 7, 189][cite_start]。これにより、エージェントは実行時に追加の訓練なしで関連タスクに適応（ゼロショット転移）できます [cite: 8]。
+
+主な貢献:
+* **関数エンコーダ (FE) の提案:**
+    * [cite_start]ある関数 $f$ を、学習された非線形基底関数 $\{\hat{g}_k\}$ の線形結合 $f(x) = \sum c_k g_k(x)$ として表現する、新しい汎用的な表現学習アルゴリズムを提案しました [cite: 6, 47, 163]。
+* **効率的な表現の計算:**
+    * [cite_start]個別のタスク関数 $f$ の表現 $c_f$（係数ベクトル）は、その関数からのサンプルデータ $\{(x_i, f(x_i))\}$ を用いたモンテカルロ積分（実質的な内積計算）によって効率的に計算されます [cite: 140-141, 148, 161]。
+* **汎化性能の理論的保証:**
+    * [cite_start]関数 $f$ からその表現 $c_f$ へのマッピングは「線形作用素」であること（Theorem 1）を証明しました [cite: 171, 176]。
+    * [cite_start]これにより、訓練で使われた関数の線形結合で表される「未知の」関数に対しても、FEが正確な表現を生成できることが保証され、高い汎化性能を持ちます [cite: 179-180]。
+* **RLへのシームレスな統合:**
+    * [cite_start]FEで得られたタスク表現 $c_f$ を、あらゆる標準的なRLアルゴリズムの方策や価値関数に追加の入力として渡すだけで、ゼロショットRLを実現できることを示しました [cite: 46, 62, 189-190]。
+* **SOTA性能の実証:**
+    * [cite_start]隠れパラメータを持つシステム同定（教師あり学習）、マルチエージェントRL、マルチタスクRLという3つの異なる分野において、FEを既存のRLアルゴリズムに組み込むだけで、データ効率、漸近性能、学習安定性の全てでSOTAを達成することを示しました [cite: 9, 52-55]。
+
+結論:
+
+[cite_start]本研究は、関数を学習された非線形基底関数の線形結合として符号化する、汎用的な表現学習アルゴリズム「関数エンコーダ」を導入しました [cite: 478][cite_start]。このエンコーダは線形作用素であるため、学習した表現は一般化可能であり、未知のタスクに対しても予測可能な表現を生成します [cite: 479][cite_start]。この関数エンコーダをタスク表現の生成に用いることで、基本的なRLアルゴリズムが、タスク（報酬関数や遷移関数）の表現ベクトルを追加の入力として受け取るだけで、関連タスク間でのゼロショット転移を達成できることを示しました [cite: 480-481][cite_start]。この手法は、基本的なRLアルゴリズムの単純さを保ちつつ、安定性、データ効率、および高い漸近性能を実現します [cite: 482]。
+</div></details>
+- Keywords : `Zero-Shot Reinforcement Learning`, `Representation Learning`, `Function Encoder`, `Multi-Task RL`, `System Identification`, `Basis Functions`
+
+### RLSAC: Reinforcement Learning enhanced Sample Consensus for End-to-End Robust Estimation
+[[Paper]](https://openaccess.thecvf.com/content/ICCV2023/papers/Nie_RLSAC_Reinforcement_Learning_Enhanced_Sample_Consensus_for_End-to-End_Robust_Estimation_ICCV_2023_paper.pdf)
+[[bibtex]](https://openaccess.thecvf.com/content/ICCV2023/html/Nie_RLSAC_Reinforcement_Learning_Enhanced_Sample_Consensus_for_End-to-End_Robust_Estimation_ICCV_2023_paper.html)
+<details><summary>summary</summary><div>
+
+概要:
+
+[cite_start]ロバスト推定（ノイズの多いデータからモデルパラメータを推定するタスク）は、コンピュータビジョンにおいて非常に重要ですが、依然として困難な課題です [cite: 13, 25][cite_start]。RANSAC [cite: 50] [cite_start]に代表される従来のサンプリングコンセンサス（標本合意）に基づくアルゴリズムは、ランダムサンプリングを繰り返すことでロバスト性を担保しますが、データの特徴や履歴情報を効果的に利用できず、非微分可能であるため学習ベースのパイプラインに組み込めないという問題がありました [cite: 14, 55-57][cite_start]。本研究は、このサンプリングコンセンサスのプロセスを強化学習（RL）の問題として再定式化する、**RLSAC (Reinforcement Learning enhanced SAmple Consensus)** という新しいエンドツーエンドのロバスト推定フレームワークを提案します [cite: 15, 61-62]。
+
+主な貢献:
+* **RLによるサンプリングコンセンサスの再定式化:**
+    * [cite_start]サンプリングコンセンサスのプロセスを、RLのエージェントと環境の相互作用としてモデル化しました [cite: 62]。
+    * [cite_start]エージェント（ニューラルネットワーク）がデータから「最小セット」をサンプリングすることを「行動（Action）」と見なします [cite: 63]。
+    * [cite_start]環境がその最小セットから仮説（Hypothesis）を生成し、その品質（例：インライア率）を「報酬（Reward）」としてエージェントにフィードバックします [cite: 64, 70]。
+* **グラフニューラルネットワークによるエージェント:**
+    * [cite_start]エージェントの方策ネットワーク（Policy Network）として、グラフニューラルネットワーク（GNN）を採用しました [cite: 16]。
+    * [cite_start]これにより、データの特徴（例：対応点の記述子）間の相互関係を考慮し、次にサンプリングすべき「最小セット」を賢く選択（探索）できます [cite: 203-205]。
+* **微分不要なエンドツーエンド学習:**
+    * [cite_start]仮説の品質（インライア率など）を報酬として利用するため、サンプリングプロセス自体が微分不可能であっても、RL（SAC-Discrete [cite: 266][cite_start]）を用いて方策ネットワークを教師なしで訓練できます [cite: 17, 70]。
+    * [cite_start]これにより、下流タスク（例：ロバスト推定）のフィードバックに基づいたエンドツーエンドの学習が可能になります [cite: 18, 71, 242]。
+* **状態（State）エンコーディング:**
+    * [cite_start]RLの状態（State）として、元のデータ特徴量に加え、「メモリ特徴量」を導入しました [cite: 19, 67]。
+    * [cite_start]メモリ特徴量には、現在のアクション（どのデータが選ばれたか）、仮説に対するデータの残差、および過去のサンプリング履歴（データが何回選ばれたか）が含まれます [cite: 67, 245, 254]。
+    * [cite_start]これにより、エージェントは過去のアクションの品質を評価し、より良い仮説を徐々に探索できます [cite: 69, 317]。
+
+結論:
+
+[cite_start]本研究は、サンプリングコンセンサスを強化学習で強化する新しいフレームワークRLSACを提案しました。RLSACは、GNNを用いてデータ特徴とメモリ特徴を活用し、より良い仮説を徐々に探索します [cite: 20][cite_start]。報酬ベースの教師なし学習により、微分不可能なプロセスを含むエンドツーエンドのロバスト推定を実現しました [cite: 86][cite_start]。2Dラインフィッティングや基本行列推定といったタスクにおいて、RLSACは高いロバスト性とSOTAの性能を達成しました [cite: 87-88][cite_start]。本フレームワークは特定のタスクに限定されず、他のサンプリングコンセンサスベースのロバスト推定問題にも容易に応用可能です [cite: 21, 89]。
+</div></details>
+- Keywords : `Robust Estimation`, `RANSAC`, `Sample Consensus`, `Reinforcement Learning`, `End-to-End Learning`, `Graph Neural Network`
+
+[[Paper]]()
+[[bibtex]]()
