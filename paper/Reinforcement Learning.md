@@ -448,5 +448,153 @@ AgentViTは、ViTのパッチ処理において、効率と精度を両立させ
 </div></details>
 - Keywords : `Robust Estimation`, `RANSAC`, `Sample Consensus`, `Reinforcement Learning`, `End-to-End Learning`, `Graph Neural Network`
 
+### Out-of-Distribution Detection for Reinforcement Learning Agents with Probabilistic Dynamics Models
+[[Paper]](https://dl.acm.org/doi/pdf/10.5555/3545946.3598721)
+[[bibtex]](https://dl.acm.org/doi/10.5555/3545946.3598721)
+
+<details><summary>summary</summary><div>
+
+概要:
+
+[cite_start]強化学習（RL）エージェントの信頼性は未だ大きな課題であり、特に訓練環境と著しく異なる状況（Out-of-Distribution, OOD）では予測不可能な振る舞いをし、性能低下や安全性の違反を引き起こす可能性があります [cite: 13-14, 41-42][cite_start]。そのため、エージェントは未知の状況に遭遇した際に警告を発する能力を持つべきです [cite: 15][cite_start]。しかし、RLの文脈において「OODとは何か」という共通理解すら存在しません [cite: 17][cite_start]。本研究は、RLにおけるOODを「マルコフ決定過程（MDP）の深刻な摂動」として定式化し、このギャップを埋めることを目指します [cite: 18-19, 53][cite_start]。このOOD（意味的なシフト）を検出するため、本研究は確率的なダイナミクスモデルとブートストラップアンサンブルを活用した新しい予測アルゴリズムを提案します [cite: 20, 59]。
+
+主な貢献:
+* **RLにおけるOODの定式化:**
+    * [cite_start]従来の曖昧な定義やセンサーノイズ（共変量シフト）中心の議論とは一線を画し、RLにおけるOODを「MDPの深刻な摂動」、特にシステムのセマンティクス（意味）を変えるような**ダイナミクス（遷移関数）の変化**として定義することを提案しました [cite: 19, 53, 130-131]。
+* **PEDM検出アルゴリズム:**
+    * [cite_start]このOODを検出するために、モデルベースの新しいアルゴリズム（Algorithm 1）を導入しました [cite: 155][cite_start]。このアルゴリズムは、まず正常な（In-Distribution, ID）データを用いて、**Probabilistic Ensemble Dynamics Model (PEDM)** という確率的ダイナミクスモデルを訓練します [cite: 149, 162, 184]。
+* **1ステップ予測によるOOD検出:**
+    * [cite_start]実行時、エージェントの行動 $a_t$ と現在の状態 $s_t$ から、訓練済みのPEDMを用いて次の状態 $s_{t+1}^{\prime}$ を予測します [cite: 151]。
+    * [cite_start]この予測 $s_{t+1}^{\prime}$ と、環境内で実際に観測された次の状態 $s_{t+1}$ とを比較します [cite: 152]。
+    * [cite_start]予測と現実の誤差（異常スコア）が、訓練データ（ID）で決定された閾値 $\tau$ を超えた場合、その遷移をOODとして検出します [cite: 153]。
+* **不確実性を考慮した異常スコア:**
+    * [cite_start]PEDMは、確率的ネットワークのアンサンブル（$B$個のモデル）であり、システムの内在的ノイズ（Aleatoric）とモデルの不確かさ（Epistemic）の両方をモデル化します [cite: 181, 183]。
+    * [cite_start]異常スコアは、このアンサンブル分布から多数の粒子（$K$個のサンプル）をサンプリングし、その粒子群と実際の観測 $s_{t+1}$ との間の最小予測誤差に基づいて計算されます [cite: 190-191, 198, 401]。
+* **新しい評価ベンチマーク:**
+    * [cite_start]既存のOODベンチマークが疎らであるため [cite: 21, 95][cite_start]、ロボット制御タスク（CartPole, HalfCheetahなど）において、タスクのセマンティクスを直接変更する（例：ロボットの質量を変える、外部から力を加える）新しい評価シナリオを提案しました [cite: 228, 237-242]。
+    * [cite_start]提案手法(PEDM)は、これらの「深刻な摂動」に対して、既存のベースライン（KNN, LSTM, RIQNなど）よりも優れた検出性能（高いAUC）を示しました [cite: 22, 299] (Table 2)。
+
+結論:
+
+[cite_start]本研究は、RLにおけるOODを「MDPの深刻な摂動」として定義し、その検出のための一般的なアプローチを提案しました [cite: 435-436][cite_start]。提案するモデルベースの検出アルゴリズム（PEDM）は、観測された遷移が訓練済みのダイナミクスモデルからどれだけ逸脱しているかを評価することで、OODを効果的に検出します [cite: 437][cite_start]。この手法は、エージェントの振る舞いに影響を与える「深刻な」摂動に対しては高い検出性能を示し、一方で性能に影響しない「軽微な」摂動は（許容範囲として）検出しない傾向があります [cite: 440-441][cite_start]。OODの検出は、RLエージェントの信頼性を高め、実世界での応用を実現するための重要な第一歩です [cite: 442, 445, 448]。
+</div></details>
+- Keywords : `Out-of-Distribution (OOD) Detection`, `Reinforcement Learning`, `AI Safety`, `Probabilistic Dynamics Models`, `Model-Based RL`, `Anomaly Detection`
+
+### Rethinking Out-of-Distribution Detection for Reinforcement Learning: Advancing Methods for Evaluation and Detection
+[[Paper]](https://dl.acm.org/doi/pdf/10.5555/3635637.3663004)
+[[bibtex]](https://dl.acm.org/doi/abs/10.5555/3635637.3663004)
+<details><summary>summary</summary><div>
+
+概要:
+
+[cite_start]強化学習（RL）エージェントの信頼性は、特に未知の（Out-of-Distribution, OOD）テスト環境への汎化において大きな懸念事項です。本研究は、RLにおけるOOD検出（エージェントが訓練中に遭遇しなかった状況を特定するタスク）に取り組みます。まず、RLにおけるOODの用語を他の機械学習分野と整合するように整理・明確化します。次に、既存のOODベンチマークが、現実世界で起こりうる「時間的に相関のある（temporally correlated）」異常（例：カメラレンズの汚れ）を考慮していないと指摘します [cite: 1260, 1265-1266][cite_start]。実際、このような時間相関のあるノイズ（例：自己回帰ノイズ）を含む新しいベンチマーク（ARNO, ARNS）を導入したところ、既存のSOTA検出器（PEDMなど）は検出に失敗しました [cite: 1269, 1273, 1373]。この問題を解決するため、本研究は**DEXTER (Detection via Extraction of Time Series Representations)** という新しいOOD検出手法を提案します。
+
+主な貢献:
+* **RLにおけるOOD用語の整理:**
+    * RLにおけるOOD検出の用語を、教師あり学習などの分野と整合するように再定義しました。
+    * [cite_start]観測のみが変わる「感覚的異常（Sensory anomalies）」と、環境ダイナミクス自体が変わる「意味的異常（Semantic anomalies）」に分類しました [cite: 1259, 1362-1364, 1370-1372]。
+* **時間相関のある異常ベンチマークの提案:**
+    * [cite_start]従来のi.i.d.ノイズや時間的に独立な変化とは異なり、現実世界でより一般的に起こりうる「時間的自己相関」を持つ異常（AR(p)ノイズ）を導入した新しいベンチマーク（ARNO, ARNS）を提案しました [cite: 1264, 1344, 1368]。
+* **DEXTER: 時系列特徴に基づくOOD検出器:**
+    * [cite_start]1ステップ先の予測誤差に依存する従来手法（例：PEDM [cite: 1298-1299][cite_start]）が時間相関ノイズの検出に失敗することを示しました [cite: 1373, 1408]。
+    * [cite_start]対策として、観測データを「時系列」として扱い、多様な時系列特徴（統計量、自己相関、フーリエ変換など）を抽出する**DEXTER**を提案しました [cite: 1272, 1339-1342, 1345]。
+    * [cite_start]抽出された時系列特徴を入力とし、教師なし異常検出アルゴリズムである「アイソレーションフォレスト」のアンサンブルを用いて異常スコアを計算します [cite: 1273, 1350-1352]。
+* **DEXTER+C: 逐次仮説検定による迅速な検出:**
+    * [cite_start]従来の「毎ステップのスコア」に基づく判定ルールではなく、情報理論的に最適な逐次仮説検定（CUSUM）を用いて異常スコアを時系列で累積し、判定する**DEXTER+C**を提案しました [cite: 1276, 1279, 1333, 1370]。
+    * [cite_start]DEXTER+Cは、DEXTER単体よりも大幅に少ないタイムステップ（Detection Time）でOODを検出することに成功しました [cite: 1279, 1419]。
+
+結論:
+
+本研究は、RLにおけるOOD検出の用語を整理し、現実世界で重要となる「時間相関のある」異常に焦点を当てた新しいベンチマークと検出手法DEXTERを提案しました。DEXTERは、観測履歴を時系列データとして扱い、その特徴を抽出することで、従来の1ステップ予測ベースの手法（PEDMなど）が失敗する時間相関ノイズの検出において、SOTAの性能（AUROC）を達成しました。さらに、CUSUMを組み合わせたDEXTER+Cにより、検出に必要な時間を大幅に短縮しました。
+</div></details>
+- Keywords : `Out-of-Distribution (OOD) Detection`, `Reinforcement Learning`, `Time Series Analysis`, `Anomaly Detection`, `Temporally Correlated Noise`, `Isolation Forest`, `CUSUM`
+
+### Review: Domain adaptation in reinforcement learning: a comprehensive and systematic study
+[[Paper]](https://link.springer.com/article/10.1631/FITEE.2300668)
+[[bibtex]](https://link.springer.com/article/10.1631/FITEE.2300668)
+<details><summary>summary</summary><div>
+
+概要:
+
+[cite_start]強化学習（RL）は複雑な意思決定問題において大きな可能性を示していますが、その性能は大量の高品質なデータに大きく依存します [cite: 2346-2347][cite_start]。多くの実世界の状況では、ターゲット領域のデータ分布がソース領域（訓練環境）のデータ分布と著しく異なる可能性があり、RLアルゴリズムの性能が大幅に低下する原因となります [cite: 2348][cite_start]。ドメイン適応（DA）は、ソース領域からターゲット領域へ知識を転移することによってこの問題に対処する戦略です [cite: 2349][cite_start]。しかし、RLにおけるDAは、これまで包括的かつ詳細に研究されてきませんでした [cite: 2350, 2391]。本論文は、RLにおけるDAに関する包括的かつ体系的な研究（レビュー）を提供します。RLにおけるDAの基本的な概念と定式化を紹介した後、既存のDA手法をレビューします。
+
+主な貢献:
+* **RLにおけるDAの体系的レビュー:**
+    * [cite_start]RLにおけるドメイン適応（DA）に関する、包括的かつ詳細なレビューを提供します [cite: 2351, 2393][cite_start]。DAは、ソースドメインとターゲットドメインのデータ分布が異なる場合に、知識を転移する転移学習（TL）の一形態です [cite: 2384, 2447]。
+* **RLのためのDAの定式化:**
+    * RLの文脈におけるDAを、ソースドメインのMDP $(S_S, A_S, T_S, R_S)$ とターゲットドメインのMDP $(S_T, A_T, T_T, R_T)$ を用いて定式化します。
+    * [cite_start]多くのDAシナリオでは、状態空間 $S$ が異なる（例：天候による観測の変化）一方で、行動空間 $A$ は同一であり、遷移関数 $T$ と報酬関数 $R$ は類似していることが仮定されます [cite: 2467-2468, 2471-2472]。
+* **DA手法の分類と評価:**
+    * [cite_start]既存のDAアプローチを、アプリケーションドメインに基づいて7つのカテゴリに分類します（例：対話システム、Sim2Real、ロボティクス、NLPなど） [cite: 2356, 2485]。
+    * [cite_start]また、教師あり、半教師あり、教師なし学習という3つの主要なクラスにも分類します [cite: 2394, 2893]。
+    * [cite_start]各カテゴリの手法を、性能、最適化可能性、データ依存度、スケーラビリティ（データ/タスク）、効率といった重要な指標に基づいて議論・比較します [cite: 2357, 2486-2493, 2768]。
+* **課題と将来の展望:**
+    * [cite_start]DA手法のパフォーマンスギャップ、モデルの堅牢性（ロバスト性）、エッジデバイスでの効率的なオンデバイス学習、フェデレーテッドラーニングにおけるドメインシフト、マルチタスク適応など、未解決の課題と将来の研究の方向性を提示します [cite: 2855, 2864, 2872, 2882, 2889]。
+
+結論:
+
+[cite_start]本論文は、RLの文脈におけるDAの最近の発展について詳細な評価を提供しました。既存の研究を分類し、重要な指標に基づいて比較しました [cite: 2892-2893][cite_start]。この分野における課題と将来の方向性を提示することで、この分野の包括的な知識と、将来の研究への有用な洞察を提供することを目指しています [cite: 2895-2896]。
+</div></details>
+- Keywords : `Reinforcement Learning (RL)`, `Domain Adaptation (DA)`, `Transfer Learning (TL)`, `Review`, `Sim2Real`, `MDP`
+
+### Model Risk-Sensitive Offline Reinforcement Learning
+[[Paper]](https://openreview.net/pdf?id=h6k4809xVV)
+[[bibtex]](https://openreview.net/forum?id=h6k4809xVV)
+<details><summary>summary</summary><div>
+
+概要:
+
+[cite_start]ファイナンスや自動運転のようなリスク感知が重要な領域では、オフライン強化学習（RL）が重要になっていますが、従来の（Aleatoric）リスクを扱う手法では、推定リターン分布のわずかな誤差がリスク評価の大幅な不正確さを引き起こす可能性がありました [cite: 1485-1486, 1499][cite_start]。この問題は、オフラインRL固有の分布シフトによってさらに悪化します [cite: 1487, 1500-1501]。
+
+[cite_start]この課題に対処するため、本研究は「モデルリスク」という概念をオフラインRLに初めて導入します [cite: 1533][cite_start]。推定された単一のリスクを最小化する代わりに、本アプローチは「妥当な代替シナリオ」の集合における**最悪ケースのリスク（＝モデルリスク）**を最小化することを目指します [cite: 1488, 1502-1503][cite_start]。これにより、モデルの不正確性を考慮した、より堅牢な意思決定が可能になります [cite: 1524]。
+
+主な貢献:
+* **モデルリスク感知オフラインRLフレームワーク (MR-IQN):**
+    * [cite_start]推定されたリスクではなく、「モデルリスク」を最小化する新しいオフラインRLフレームワーク（MR-IQN）を提案します [cite: 1540, 1654]。
+    * [cite_start]アクター（Policy）は、計算されたモデルリスクとビヘイビアクローニング（BC）損失を組み合わせた損失関数によって更新されます [cite: 1659-1660]。
+* **クリティックアンサンブル基準 (Critic-Ensemble Criterion):**
+    * [cite_start]モデルリスクの計算に必要な「妥当な代替シナリオ」のセット（平均 $\mu$、標準偏差 $\sigma$、許容誤差 $\epsilon$ で定義される）を、追加のハイパーパラメータなしで特定する新しい手法を提案します [cite: 1489, 1534, 1541]。
+    * [cite_start]$\mu$ と $\sigma$ は、クリティックアンサンブル全体の最小平均と最大標準偏差から保守的に設定されます [cite: 1691-1692]。
+    * [cite_start]$\epsilon$ は、全クリティックの分位点を混合（ソート・補間）して作成した「アンサンブル分位関数」と、個々のクリティックとの間の最大ワッサースタイン距離として計算されます [cite: 1698-1701, 1707]。
+* **フーリエ特徴量による分位点回帰:**
+    * [cite_start]モデルリスク計算に不可欠なリターン分布の統計量（$\mu, \sigma$）を正確に推定するため、IQNフレームワークにフーリエ特徴量ネットワークを組み込みました [cite: 1490, 1536, 1542]。
+    * [cite_start]これは、ニューラルネットワークの「スペクトルバイアス」（高周波成分の学習が苦手な特性）に対処するためであり、このバイアスはモデルリスクの計算において深刻な誤差を引き起こす可能性があります [cite: 1490, 1764-1765]。
+
+結論:
+
+[cite_start]本研究は、モデルリスクを最小化する新しいオフラインRLフレームワーク「MR-IQN」を提案しました。ファイナンスや自動運転のシナリオにおける実験で、提案手法がベースライン（IQN-TD3+BC）と比較してリスクを11.2%から18.5%大幅に削減し、特に不確実性の高い環境で高いロバスト性を示すことを実証しました [cite: 1491, 1537, 1863]。
+</div></details>
+- Keywords : `Offline Reinforcement Learning`, `Risk-Sensitive RL`, `Model Risk`, `Distributional RL`, `Uncertainty`, `IQN`, `Fourier Features`
+
+### Rating-Based Reinforcement Learning
+[[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/28886/29684)
+[[bibtex]](https://ojs.aaai.org/index.php/AAAI/article/view/28886)
+<details><summary>summary</summary><div>
+
+概要:
+
+[cite_start]強化学習（RL）の応用に際し、報酬関数の設計はしばしば困難を伴います [cite: 3545][cite_start]。この問題を解決するために、人間のフィードバックから報酬を学習する手法が研究されてきました [cite: 3547][cite_start]。従来主流だった「選好ベース（PbRL）」の手法は、2つの軌道（trajectory）を比較させ、「どちらが良いか」という相対的な選好（preference）を利用します [cite: 3539, 3549, 3584][cite_start]。しかし、この手法は1度の質問で1ビットの情報しか得られず非効率である点 [cite: 3555][cite_start]、「どちらも悪い」といった絶対的な品質を伝えられない点 [cite: 3557-3558][cite_start]、似た軌道同士の比較が困難である点 [cite: 3560] [cite_start]などの限界がありました。本研究は、これらに対処するため、新しい「**レーティング（評価）ベースの強化学習（RbRL）**」フレームワークを提案します [cite: 3538, 3563][cite_start]。RbRLは、2つのサンプルを比較するのではなく、**単一の軌道**を人間に提示し、「とても良い」「良い」「普通」「悪い」といった多クラスの絶対評価（レーティング）をフィードバックとして利用します [cite: 3539, 3565, 3569-3570]。
+
+主な貢献:
+* **RbRLフレームワークの提案:**
+    [cite_start]人間からの多クラス（例：5段階評価）の「絶対評価（レーティング）」に基づき、報酬関数と方策を学習する新しいRLパラダイムを提案しました [cite: 3563, 3570, 3575]。
+* **新しい多クラス損失関数:**
+    [cite_start]人間のレーティングを処理するため、新しい多クラス・クロスエントロピー損失関数を設計しました [cite: 3540, 3576][cite_start]。この損失関数は、まず軌道（セグメント）の予測リターンをデータセット全体で正規化し [cite: 3622-3623][cite_start]、次に各レーティングクラス間の「境界」を、人間が実際に付けた評価の分布比率に基づいて動的に推定します [cite: 3648-3649, 3654-3656][cite_start]。最終的に、正規化されたリターンが、推定されたどのクラス境界の範囲内に収まるかに基づいて、各クラスへの所属確率をモデル化します [cite: 3638-3643]。
+* **実験による有効性の検証:**
+    * [cite_start]合成データを用いた実験（Walker, Quadruped）では、RbRLがPbRLを上回る性能を達成しました [cite: 3714-3715, 3717]。
+    * [cite_start]実際の人間（専門家および非専門家）によるユーザー研究（Cheetah, Swimmer, Hopper）を実施しました [cite: 3749-3751]。
+    * [cite_start]RbRLはPbRLと同等、またはそれ以上の性能を達成し、特に専門家ユーザーの場合は一貫してPbRLを上回りました [cite: 3769-3770, 3774]。
+* **ユーザーエクスペリエンスの優位性:**
+    * [cite_start]実験後のアンケート調査により、ユーザーはPbRL（ペア比較）よりもRbRL（単一評価）の方が「精神的負荷が低い」「困難でない」「イライラしない」と感じていることが示されました [cite: 3853-3855] (Fig. 5)。
+    * [cite_start]また、ユーザーは同じ時間（30分）内でも、ペア比較よりも多くのレーティング評価を提供できることがわかり（平均で62%高速）、RbRLの方が効率的であることが示されました [cite: 3907-3909] (Fig. 6)。
+* **評価クラス数の影響:**
+    [cite_start]評価クラス数 $n$ の影響を調査し、$n=2$（例：「良い」「悪い」）や $n=8$ よりも、$n=3$～$7$ の中間的なクラス数が最も良い性能を示すことを発見しました [cite: 3734-3735] (Fig. 2)。
+
+結論:
+
+[cite_start]本研究は、人間の「絶対評価（レーティング）」を利用する新しいRbRLフレームワークを提案しました [cite: 3563][cite_start]。RbRLは、従来の「相対比較（選好）」を用いるPbRLと比較して、同等以上の性能を達成しつつ [cite: 3717, 3769-3770][cite_start]、人間側の認知負荷が低く [cite: 3853-3855][cite_start]、より効率的にフィードバックを収集できることが示されました [cite: 3908-3909]。
+</div></details>
+- Keywords : `Reinforcement Learning`, `Human-in-the-Loop`, `Reward Learning`, `Preference-based RL (PbRL)`, `Rating-based RL (RbRL)`, `Human Feedback`
+
 [[Paper]]()
 [[bibtex]]()
